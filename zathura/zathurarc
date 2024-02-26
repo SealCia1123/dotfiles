@@ -1,7 +1,6 @@
+include catppuccin-mocha
 map <C-i> recolor
 set sandbox none
-set recolor-lightcolor \#2f2d2e
-set recolor-darkcolor \#f4ecd6
 
 map = zoom in
 map - zoom out
