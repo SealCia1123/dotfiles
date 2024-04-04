@@ -21,17 +21,17 @@ return {
             no_italic = false, -- Force no italic
             no_bold = false, -- Force no bold
             no_underline = false, -- Force no underline
-            styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
-                comments = { "italic" }, -- Change the style of comments
+            styles = {
+                comments = { "italic" },
                 conditionals = {},
                 loops = {},
-                functions = {},
+                functions = { "bold" },
                 keywords = { "bold" },
-                strings = {},
+                strings = { "italic" },
                 variables = {},
                 numbers = {},
                 booleans = {},
-                properties = {},
+                properties = { "bold" },
                 types = {},
                 operators = {},
             },

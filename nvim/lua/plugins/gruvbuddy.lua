@@ -1,3 +1,0 @@
-return {
-    "tjdevries/gruvbuddy.nvim",
-}
