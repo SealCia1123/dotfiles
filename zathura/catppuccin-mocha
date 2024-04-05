@@ -1,8 +1,8 @@
-set default-fg                "#CDD6F4"
-set default-bg 			          "#1E1E2E"
+set default-fg                "#11111B"
+set default-bg 			          "#11111B"
 
 set completion-bg		          "#313244"
-set completion-fg		          "#CDD6F4"
+set completion-fg		          "#11111B"
 set completion-highlight-bg	  "#575268"
 set completion-highlight-fg	  "#CDD6F4"
 set completion-group-bg		    "#313244"
@@ -22,15 +22,15 @@ set inputbar-fg			          "#CDD6F4"
 set inputbar-bg 		          "#313244"
 
 set recolor                   "true"
-set recolor-lightcolor		    "#1E1E2E"
+set recolor-lightcolor		    "#11111B"
 set recolor-darkcolor		      "#CDD6F4"
 
 set index-fg			            "#CDD6F4"
-set index-bg			            "#1E1E2E"
+set index-bg			            "#11111B"
 set index-active-fg		        "#CDD6F4"
 set index-active-bg		        "#313244"
 
-set render-loading-bg		      "#1E1E2E"
+set render-loading-bg		      "#11111B"
 set render-loading-fg		      "#CDD6F4"
 
 set highlight-color		        "#575268"
