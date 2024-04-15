@@ -38,7 +38,7 @@
 
 window#waybar {
     background-color: @crust;
-    /* background-color: #181825; */
+    background-color: #11111b;
     color: @text;
     transition-duration: .5s;
 }
@@ -78,13 +78,6 @@ button {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
-/*
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -3px #D9E0EE;
-}
-*/
-
 #workspaces button:hover {
     color: @blue;
     box-shadow: inherit;
@@ -92,22 +85,6 @@ button {
     background: @crust;
     border: @crust;
 }
-
-/*
-#workspaces button.focused {
-    background-color: #161320;
-    box-shadow: inset 0 -3px #D9E0EE;
-}
-
-#workspaces button.urgent {
-    background-color: #F28FAD;
-}
-
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #D9E0EE;
-}
-*/
 
 #workspaces button {
     padding: 0 6px;
@@ -117,11 +94,11 @@ button {
 }
 
 #workspaces button.selected {
-    color: @blue;
+    color: @text;
 }
 
 #workspaces button.active {
-    color: @blue;
+    color: @text;
 }
 
 #workspaces button.urgent {
@@ -145,13 +122,13 @@ button {
 #idle_inhibitor,
 #mpd,
 #language,
- #idle_inhibitor {
+#idle_inhibitor {
      padding: 0 10px;
      margin: 3px 0px;
-     color: #D9E0EE;
+     color: #1e1e2e;
      border-radius: 4px;
      background-color: #161320;
- }
+}
 
 #window,
 #workspaces {
@@ -173,32 +150,32 @@ button {
 }
 
 #pulseaudio {
-  color: @mauve;
+  color: @text;
 }
 
 #pulseaudio.muted {
-  color: @surface2;
+  color: @text;
 }
 
 #network {
-  color: @blue;
+  color: @text;
 }
 
 #network.disconnected {
-  color: @surface2;
+  color: @text;
 }
 
 #battery {
-    color: @green;
+  color: @text;
 }
 
 #battery.warning:not(.charging) {
-    color: @red;
+  color: @text;
 }
 
 #custom-power {
-  color: @maroon;
-  margin-right: 5px;
+  color: @text;
+  margin-right: 88px;
 }
 
 #scratchpad {

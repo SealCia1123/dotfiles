@@ -23,14 +23,14 @@ return {
     }),
     config = function()
         local cmp = require("cmp")
-        local capabilities = require("cmp_nvim_lsp").default_capabilities()
+        -- local capabilities = require("cmp_nvim_lsp").default_capabilities()
         local cmp_kinds = {
-            Text = "  ",
+            Text = "  ",
             Method = "  ",
-            Function = " 󰡱 ",
+            Function = "  ",
             Constructor = "  ",
             Field = "  ",
-            Variable = "  ",
+            Variable = "  ",
             Class = "  ",
             Interface = "  ",
             Module = "  ",
@@ -71,21 +71,18 @@ return {
             }),
 
             formatting = {
-                fields = { "abbr", "kind" },
+                fields = { "abbr" },
 
                 format = function(entry, item)
-                    -- Define menu shorthand for different completion sources.
-                    --
                     local menu_icon = {
                         nvim_lsp = "NLSP",
                         luasnip = "LSNP",
                         buffer = "BUFF",
                         path = "PATH",
-                        nvim_lua = "NLUA",
+                        -- nvim_lua = "NLUA",
                     }
-                    -- Set the menu "icon" to the shorthand for each completion source.
                     item.menu = menu_icon[entry.source.name]
-                    item.kind = (cmp_kinds[item.kind] or "") .. item.kind
+                    item.kind = cmp_kinds[item.kind] or ""
                     fixed_width = fixed_width or false
                     local content = item.abbr
                     if fixed_width then
