@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -101,7 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.local/bin":$PATH
 eval "$(zoxide init zsh)"
-source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ..='z ..'
 alias ...='z ../..'
@@ -113,12 +111,11 @@ alias vi='nvim'
 alias tmuxkill='tmux kill-session -t'
 alias df='df -h'
 alias att='tmux a'
+alias reboot='sudo reboot'
+alias shutdown='sudo shutdown now'
 bindkey 'r\t' end-of-line
-
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
