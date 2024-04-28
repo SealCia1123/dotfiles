@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,12 +110,8 @@ alias cp='cp -vair'
 alias vi='nvim'
 alias tmuxkill='tmux kill-session -t'
 alias df='df -h'
+alias cdf='cd ~'
 alias att='tmux a'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
 bindkey 'r\t' end-of-line
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
