@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Zed Editor
+GenericName=Code Editor
+Icon=/home/sealcia/ZedIcon/enableNewUi.svg
+Exec=/usr/bin/Zed
+Terminal=false
+Categories=Code;Editor;
