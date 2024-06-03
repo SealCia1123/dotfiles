@@ -1,9 +1,10 @@
 include catppuccin-mocha
 map <C-i> recolor
 set sandbox none
+set selection-clipboard clipboard
 
 map = zoom in
 map - zoom out
 map + zoom default
-set font "JetBrainsMono Nerd Font 10"
-set selection-clipboard clipboard
+set font "SF Pro Display 10"
+set scroll-step 80
