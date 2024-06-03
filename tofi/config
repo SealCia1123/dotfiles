@@ -14,5 +14,5 @@ outline-width = 0
 result-spacing = 14
 num-results = 8
 font = SF Pro Display SemiBold
-font-variations = "wght 700"
-font-size = 28
+font-variations = "wght 500"
+font-size = 32
