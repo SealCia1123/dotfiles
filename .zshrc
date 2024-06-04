@@ -116,6 +116,9 @@ alias cdh='cd ~'
 alias att='tmux a'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
+alias winboot='sudo efibootmgr --bootnext 0002; sudo reboot'
+alias fedoraboot='sudo efibootmgr --bootnext 0004; sudo reboot'
+alias dl='aria2c -x 16 -s 16'
 bindkey 'r\t' end-of-line
 source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -123,3 +126,10 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="kitty"
 export BROWSER="thorium"
+# export XMODIFIERS=@im=fcitx
+# export QT_IM_MODULE=fcitx
+# export GTK_IM_MODULE=fcitx
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
