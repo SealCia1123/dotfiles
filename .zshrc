@@ -101,25 +101,40 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin":$PATH
 eval "$(zoxide init zsh)"
 
+# Casually use terminal commands
 alias ..='z ..'
 alias ...='z ../..'
 alias ....='z ../../..'
 alias update='sudo pacman -Syu'
-alias r='ranger'
+alias ra='ranger'
 alias cp='cp -vair'
 alias vi='nvim'
+alias cdh='cd ~'
+# alias reboot='sudo reboot'
+# alias shutdown='sudo shutdown now'
+alias reboot='/sbin/shutdown -a now'
+alias shutdown='/sbin/shutdown -r now'
+alias dl='aria2c -x 16 -s 16' # Quick download command using aria2
+
+# Hypr shortcuts
+alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox (best way to exec applications)
+alias hyprlogout='hyprctl dispatch exit'
+
+# TMUX shortcuts
 alias t='tmux'
 alias ta='tmux attach'
 alias tk='tmux kill-session -t'
 alias df='df -h'
-alias cdh='cd ~'
-alias att='tmux a'
-alias reboot='sudo reboot'
-alias shutdown='sudo shutdown now'
+
+# Boot to windows/fedora
 alias winboot='sudo efibootmgr --bootnext 0002; sudo reboot'
 alias fedoraboot='sudo efibootmgr --bootnext 0004; sudo reboot'
-alias dl='aria2c -x 16 -s 16'
-bindkey 'r\t' end-of-line
+# bindkey 'r\t' end-of-line
+
+# Enable vim mode in terminal
+# set -o vi
+
+# source zsh syntax highlighting
 source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export EDITOR="nvim"
