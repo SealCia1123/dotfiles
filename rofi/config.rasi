@@ -3,8 +3,7 @@ configuration {
   display-window: "Windows:";
   drun-display-format: "{name}";
   font: "SF Pro Display Medium 14";
-  modi: "window,run,drun";
-  
+  modi: "drun,window,run";
   // enabling the icons
   show-icons: true;
   icon-theme: "Papirus";
