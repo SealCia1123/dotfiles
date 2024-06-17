@@ -101,24 +101,34 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin":$PATH
 eval "$(zoxide init zsh)"
 
-# Casually use terminal commands
+# Frequently used commands
 alias ..='z ..'
 alias ...='z ../..'
 alias ....='z ../../..'
-alias update='sudo pacman -Syu'
+alias update='sudo pacman -Syu;yay'
+alias install='sudo pacman -S'
+alias remove='sudo pacman -Rns'
+alias search='pacman -Ss'
+alias yinstall='yay -S'
+alias ysearch='yay -Ss'
+alias yremove='yay -Rns'
 alias ra='ranger'
 alias cp='cp -vair'
 alias vi='nvim'
 alias cdh='cd ~'
+# alias ls='lsd'
+# alias ll='lsd -l'
+# alias la='lsd -la'
 # alias reboot='sudo reboot'
 # alias shutdown='sudo shutdown now'
-alias reboot='/sbin/shutdown -a now'
-alias shutdown='/sbin/shutdown -r now'
+alias reboot='sudo /sbin/shutdown -r now'
+alias shutdown='sudo /sbin/shutdown -a now'
 alias dl='aria2c -x 16 -s 16' # Quick download command using aria2
 
 # Hypr shortcuts
-alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox (best way to exec applications)
+alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox
 alias hyprlogout='hyprctl dispatch exit'
+alias bsp-logout='bspc quit'
 
 # TMUX shortcuts
 alias t='tmux'
@@ -129,7 +139,6 @@ alias df='df -h'
 # Boot to windows/fedora
 alias winboot='sudo efibootmgr --bootnext 0002; sudo reboot'
 alias fedoraboot='sudo efibootmgr --bootnext 0004; sudo reboot'
-# bindkey 'r\t' end-of-line
 
 # Enable vim mode in terminal
 # set -o vi
