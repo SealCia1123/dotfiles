@@ -44,3 +44,6 @@ require("lazy").setup({
         },
     },
 })
+
+-- Start Oil nvim
+require("oil").setup()

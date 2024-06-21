@@ -25,7 +25,7 @@ return {
                 comments = {},
                 conditionals = {},
                 loops = {},
-                functions = { "bold" },
+                functions = {},
                 keywords = { "bold" },
                 strings = {},
                 variables = {},
