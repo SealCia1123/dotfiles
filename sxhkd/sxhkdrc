@@ -15,11 +15,11 @@ Shift + Print
 # program launcher
 #super + @space
 alt + space
-	dmenu_run -fn 'Cantarell-12'
+	rofi -show drun
 
 #	dmenu_run
 super + space
-	rofi -show drun
+	dmenu_run -fn 'Cantarell-12'
 
 # make sxhkd reload its configuration files:
 super + Escape
