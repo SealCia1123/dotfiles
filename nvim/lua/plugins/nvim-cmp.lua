@@ -3,12 +3,9 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
-        "saadparwaiz1/cmp_luasnip",
-        "lukas-reineke/cmp-under-comparator",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-nvim-lua",
         "lukas-reineke/cmp-rg",
-        "hrsh7th/cmp-nvim-lsp-signature-help",
         {
             "onsails/lspkind-nvim",
             config = function()
@@ -17,45 +14,11 @@ return {
         },
     },
 
-    require("cmp").setup({
-        sources = {
-            { name = "nvim_lsp_signature_help" },
-        },
-    }),
     config = function()
         local cmp = require("cmp")
-        local capabilities = require("cmp_nvim_lsp").default_capabilities()
-        local cmp_kinds = {
-            Text = " ",
-            Method = " ",
-            Function = " ",
-            Constructor = " ",
-            Field = " ",
-            Variable = " ",
-            Class = " ",
-            Interface = " ",
-            Module = " ",
-            Property = " ",
-            Unit = " ",
-            Value = " ",
-            Enum = " ",
-            Keyword = " ",
-            Snippet = " ",
-            Color = " ",
-            File = " ",
-            Reference = " ",
-            Folder = " ",
-            EnumMember = " ",
-            Constant = " ",
-            Struct = " ",
-            Event = " ",
-            Operator = " ",
-            TypeParameter = " ",
-        }
         local fixed_width = 35
         cmp.setup({
             preselect = cmp.PreselectMode.None,
-
             view = {
                 docs = {
                     auto_open = false,
@@ -65,10 +28,10 @@ return {
 
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
-                -- { name = "nvim_lsp_signature_help" },
-            }, {
                 { name = "luasnip" },
+            }, {
                 { name = "buffer" },
+                -- { name = "nvim_lsp_signature_help" },
             }),
             formatting = {
                 fields = { "abbr", "menu", "kind" },
@@ -117,36 +80,6 @@ return {
                     return item
                 end,
             },
-            -- formatting = {
-            --     fields = { "abbr", "kind", "menu" },
-            --
-            --     format = function(entry, item)
-            --         local menu_icon = {
-            --             nvim_lsp = "NLSP",
-            --             luasnip = "LSNP",
-            --             buffer = "BUFF",
-            --             path = "PATH",
-            --             -- nvim_lua = "NLUA",
-            --         }
-            --         item.menu = menu_icon[entry.source.name]
-            --         item.kind = cmp_kinds[item.kind] or ""
-            --         fixed_width = fixed_width or false
-            --         local content = item.abbr
-            --         if fixed_width then
-            --             vim.o.pumwidth = fixed_width
-            --         end
-            --         local win_width = vim.api.nvim_win_get_width(0)
-            --         local max_content_width = fixed_width and fixed_width - 10 or math.floor(win_width * 0.2)
-            --         if #content > max_content_width then
-            --             item.abbr = vim.fn.strcharpart(content, 0, max_content_width - 3) .. "..."
-            --         else
-            --             item.abbr = content .. (" "):rep(max_content_width - #content)
-            --         end
-            --         return item
-            -- expandable_indicator = false,
-            --     end,
-            -- },
-
             snippet = {
                 expand = function(args)
                     require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
