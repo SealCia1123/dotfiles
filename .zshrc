@@ -109,9 +109,9 @@ alias update='sudo pacman -Syu;yay'
 alias install='sudo pacman -S'
 alias remove='sudo pacman -Rns'
 alias search='pacman -Ss'
-alias yinstall='yay -S'
-alias ysearch='yay -Ss'
-alias yremove='yay -Rns'
+alias ainstall='yay -S'
+alias asearch='yay -Ss'
+alias aremove='yay -Rns'
 alias ra='ranger'
 alias cp='cp -vair'
 alias vi='nvim'
@@ -146,10 +146,10 @@ alias fedoraboot='sudo efibootmgr --bootnext 0004; sudo reboot'
 # source zsh syntax highlighting
 source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export EDITOR="nvim"
-export VISUAL="nvim"
-export TERMINAL="kitty"
-export BROWSER="thorium"
+export EDITOR="/usr/bin/nvim"
+export VISUAL="/usr/bin/nvim"
+export TERMINAL="/usr/bin/kitty"
+export BROWSER="/usr/bin/thorium-browser"
 # export XMODIFIERS=@im=fcitx
 # export QT_IM_MODULE=fcitx
 # export GTK_IM_MODULE=fcitx
