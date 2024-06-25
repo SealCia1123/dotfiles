@@ -33,7 +33,7 @@
     font-weight: bolder;
     padding-top: 0px;
     padding-bottom: 0px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -65,8 +65,8 @@ button {
 }
 
 #workspaces button {
-    padding: 0px 2px;
-    margin: 3px 3px;
+    padding: 0px 1px;
+    margin: 0px 0px;
     background-color: #161320;
     color: #D9E0EE;
     /* Use box-shadow instead of border so the text isn't offset */
@@ -132,7 +132,7 @@ button {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 2px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

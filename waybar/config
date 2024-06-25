@@ -1,59 +1,77 @@
 {
-    "layer": "bottom", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 23, // Waybar height (to be removed for auto height)
-    "spacing": 4, // Gaps between modules (4px)
-    "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["network", "pulseaudio", "battery", "tray", "clock" ],
-
-    "river/tags": {
-      "num-tags": 9
-    },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": " ",
-            "deactivated": " "
-        }
-    },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    "clock": {
-        "format": "{:%R  -  %A  -  %d/%m/%Y}",
-        "tooltip-format":
-            "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-
-    "battery": {
-        "states": {
-            "good": 80,
-            "warning": 20
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
-        "format-icons": [ "󰂎 ", "󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 " ],
+	"layer": "bottom", // Waybar at top layer
+	"position": "top", // Waybar position (top|bottom|left|right)
+	"height": 26, // Waybar height (to be removed for auto height)
+	"spacing": 4, // Gaps between modules (4px)
+	"modules-left": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"network",
+		"pulseaudio",
+		"battery",
+		"tray",
+		"clock"
+	],
+	"river/tags": {
+		"num-tags": 9
+	},
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": " ",
+			"deactivated": " "
+		}
+	},
+	"tray": {
+		"icon-size": 21,
+		"spacing": 10
+	},
+	"clock": {
+		"format": "  {:%R %A %d/%m/%y}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+	"battery": {
+		"states": {
+			"good": 80,
+			"warning": 20
+		},
+		"format": "{icon} {capacity}%",
+		"format-charging": "󰂄  {capacity}%",
+		"format-icons": [
+			"󰂎 ",
+			"󰁺 ",
+			"󰁻 ",
+			"󰁼 ",
+			"󰁽 ",
+			"󰁾 ",
+			"󰁿 ",
+			"󰂀 ",
+			"󰂁 ",
+			"󰂂 ",
+			"󰁹 "
+		],
 		"tooltip-format": "{capacity}% capacity"
-    },
-    "network": {
-        "format-wifi": "󰤨   {essid}",
-        "format-ethernet": "{ipaddr}/{cidr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "󰤭 ",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-muted": "󰖁",
-				"format-icons": {
-					"default": [" ", " ", "󰕾 "]
-				},
-				"tooltip-format": "{volume}% volume",
-        "on-click": "pavucontrol"
-    },
+	},
+	"network": {
+		"format-wifi": "  {essid}",
+		"format-ethernet": "{ipaddr}/{cidr}",
+		"format-linked": "{ifname} (No IP)",
+		"format-disconnected": "󰤭 ",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": "󰖁 ",
+		"format-icons": {
+			"default": [
+				" ",
+				" ",
+				"󰕾 "
+			]
+		},
+		"tooltip-format": "{volume}% volume",
+		"on-click": "pavucontrol"
+	},
 }
-
-
