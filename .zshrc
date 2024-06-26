@@ -112,7 +112,7 @@ alias search='pacman -Ss'
 alias ainstall='yay -S'
 alias asearch='yay -Ss'
 alias aremove='yay -Rns'
-alias ra='ranger'
+alias yy='yazi'
 alias cp='cp -vair'
 alias vi='nvim'
 alias cdh='cd ~'
@@ -127,7 +127,8 @@ alias dl='aria2c -x 16 -s 16' # Quick download command using aria2
 
 # Hypr shortcuts
 alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox
-alias hyprlogout='hyprctl dispatch exit'
+alias hylogout='hyprctl dispatch exit'
+alias lock='hyprlock'
 alias bsp-logout='bspc quit'
 
 # TMUX shortcuts
