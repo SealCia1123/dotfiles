@@ -1,0 +1,28 @@
+{
+  "editor.fontSize": 20,
+  "editor.fontFamily": "Consolas",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.cursorBlinking": "solid",
+  "keyboard.dispatch": "keyCode",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "workbench.iconTheme": "catppuccin-frappe",
+  "explorer.confirmDelete": false,
+  "editor.detectIndentation": false,
+  "editor.lineNumbers": "off",
+  "window.menuBarVisibility": "toggle",
+  "workbench.colorTheme": "Default Dark+",
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/workspace/.vimrc",
+  "workbench.statusBar.visible": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  }
+}
