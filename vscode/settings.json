@@ -20,6 +20,7 @@
         "<C-f>": false
     },
     "vim.leader": "<Space>",
+    "vim.hlsearch": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         // switch b/w buffers
         { "before": ["<S-h>"], "commands": [":bprevious"] },
@@ -30,7 +31,7 @@
         { "before": ["leader", "s"], "commands": [":split"] },
         // panes
         {
-            "before": ["leader", "h"],
+            "before": ["<C-h>"],
             "commands": ["workbench.action.focusLeftGroup"]
         },
         {
@@ -42,9 +43,31 @@
             "commands": ["workbench.action.focusAboveGroup"]
         },
         {
-            "before": ["leader", "l"],
+            "before": ["<C-l>"],
             "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["leader", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["leader", "c", "f"],
+            "commands": ["editor.action.formatDocument"]
         }
+    ],
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        // Move selected lines while staying in visual mode
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+        // toggle comment selection
+        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
     ],
     "git.confirmSync": false,
     "notebook.defaultFormatter": "HookyQR.beautify",
