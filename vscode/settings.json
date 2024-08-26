@@ -1,0 +1,60 @@
+{
+    "editor.fontSize": 24,
+    "editor.fontFamily": "Consolas",
+    "git.openRepositoryInParentFolders": "never",
+    "editor.cursorBlinking": "solid",
+    "keyboard.dispatch": "keyCode",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "explorer.confirmDelete": false,
+    "editor.detectIndentation": false,
+    "editor.lineNumbers": "off",
+    "window.menuBarVisibility": "toggle",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/workspace/.vimrc",
+    "vim.handleKeys": {
+        "<C-p>": false,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-w>": false,
+        "<C-f>": false
+    },
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // switch b/w buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        // splits
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+        // panes
+        {
+            "before": ["leader", "h"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["leader", "j"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["leader", "k"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["leader", "l"],
+            "commands": ["workbench.action.focusRightGroup"]
+        }
+    ],
+    "git.confirmSync": false,
+    "notebook.defaultFormatter": "HookyQR.beautify",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.formatOnSave": true,
+    "vim.useCtrlKeys": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "breadcrumbs.enabled": false
+}
