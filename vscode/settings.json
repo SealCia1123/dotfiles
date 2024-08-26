@@ -19,8 +19,12 @@
         "<C-w>": false,
         "<C-f>": false
     },
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#00ffd9"
+    },
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         // switch b/w buffers
         { "before": ["<S-h>"], "commands": [":bprevious"] },
