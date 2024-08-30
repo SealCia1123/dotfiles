@@ -137,6 +137,7 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
         "VonHeikemen/lsp-zero.nvim",
+        "hrsh7th/cmp-nvim-lsp-signature-help",
         "neovim/nvim-lspconfig",
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
@@ -145,8 +146,8 @@ return {
         "hrsh7th/nvim-cmp",
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
-        "hrsh7th/vim-vsnip",
-        "hrsh7th/cmp-vsnip",
+        -- "hrsh7th/vim-vsnip",
+        -- "hrsh7th/cmp-vsnip",
         {
             "onsails/lspkind-nvim",
             config = function()
@@ -169,7 +170,7 @@ return {
                     -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
                 end,
             },
-            preselect = cmp.PreselectMode.None,
+            -- preselect = cmp.PreselectMode.None,
             view = {
                 docs = {
                     auto_open = true,
@@ -178,10 +179,10 @@ return {
             },
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
+                { name = "nvim_lsp_signature_help" },
                 { name = "luasnip" },
             }, {
                 { name = "buffer" },
-                { name = "nvim_lsp_signature_help" },
             }),
             formatting = {
                 fields = { "abbr", "menu", "kind" },
@@ -233,8 +234,8 @@ return {
             window = {
                 completion = cmp.config.window.bordered({ side_padding = 0 }),
                 documentation = {
-                    max_width = 40,
-                    max_height = 20,
+                    max_width = 50,
+                    max_height = 60,
                 },
             },
             mapping = cmp.mapping.preset.insert({
@@ -244,8 +245,9 @@ return {
                 -- ["<C-f>"] = cmp.mapping.scroll_docs(4),
                 ["<C-Space>"] = cmp.mapping.complete(),
                 ["<C-e>"] = cmp.mapping.abort(),
-                ["<CR>"] = cmp.mapping.confirm({ select = true }),
-                ["<C-g>"] = cmp.mapping.open_docs(),
+                ["<CR>"] = cmp.mapping.confirm({ select = false }),
+                ["<C-g>"] = cmp.mapping.close_docs(),
+                ["<C-]>"] = cmp.mapping.close(),
             }),
         })
     end,
