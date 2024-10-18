@@ -17,7 +17,7 @@
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 9
 # Color
 set $rosewater #f5e0dc
 set $flamingo  #f2cdcd
@@ -56,7 +56,8 @@ client.focused           $crust   #272727 #ffffff  #737373 #272727
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
-
+exec --no-startup-id /usr/lib/polkit-gnome-authentication-agent-1
+exec --no-startup-id xautocfg
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -64,9 +65,11 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
+exec --no-startup-id i3status-title-on-bar
+# exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
+exec --no-startup-id picom
 exec --no-startup-id ibus-daemon -rxRd
-exec --no-startup-id albert
+# exec --no-startup-id albert
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -90,19 +93,27 @@ tiling_drag modifier titlebar
 bindsym Mod4+q exec kitty
 bindsym Print exec flameshot gui
 # bindsym Mod4+space exec --no-startup-id gapplication launch io.ulauncher.Ulauncher
+bindsym Mod4+space exec --no-startup-id rofi -show drun
 bindsym Mod1+space exec --no-startup-id dmenu_run -fn 'DejaVu Sans Mono-13'
 # bindsym Mod1+space exec --no-startup-id /home/sealcia/.local/bin/dmenu_run_history -fn 'DejaVu Sans Mono-13'
 # bindsym Mod4+space exec --no-startup-id /home/sealcia/.config/rofi/launchers/type-1/launcher.sh
 # bindsym Mod4+space exec ulauncher-toggle
 
+# Icons 
+for_window [all] title_window_icon yes
+for_window [all] title_window_icon_padding 1
+
 # Gaps
 gaps inner 0
 gaps outer 0
+
 # Border
-default_border normal 1
+# default_border normal 1
 # default_floating_border pixel 1
+
 # Remove top bar of each workspace
-# for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 0
+
 # kill focused window
 bindsym Mod1+c kill
 # Switch between recent workspaces
