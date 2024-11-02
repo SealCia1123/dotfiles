@@ -58,6 +58,7 @@ client.focused           $crust   #272727 #ffffff  #737373 #272727
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/polkit-gnome-authentication-agent-1
 exec --no-startup-id xautocfg
+exec --no-startup-id xsettingsd
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -114,6 +115,7 @@ gaps outer 0
 # Remove top bar of each workspace
 for_window [class="^.*"] border pixel 0
 
+
 # kill focused window
 bindsym Mod1+c kill
 # Switch between recent workspaces
@@ -166,6 +168,9 @@ bindsym Mod4+f fullscreen toggle
 bindsym Mod4+s layout stacking
 bindsym Mod4+t layout tabbed
 bindsym Mod4+e layout toggle split
+
+# Set tabbed mode default
+# workspace_layout tabbed
 
 # toggle tiling / floating
 bindsym Mod4+Shift+space floating toggle
