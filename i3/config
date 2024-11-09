@@ -68,7 +68,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id i3status-title-on-bar
 # exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
-exec --no-startup-id picom
+exec --no-startup-id picom --experimental-backend
 exec --no-startup-id ibus-daemon -rxRd
 # exec --no-startup-id albert
 # NetworkManager is the most popular way to manage wireless networks on Linux,
