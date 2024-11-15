@@ -132,7 +132,7 @@ alias lock='hyprlock'
 alias bsp-logout='bspc quit'
 
 # TMUX shortcuts
-alias t='tmux'
+alias t="tmux new -s home"
 alias ta='tmux attach'
 alias tk='tmux kill-session -t'
 alias df='df -h'
@@ -154,6 +154,7 @@ export BROWSER="/usr/bin/thorium-browser"
 # export XMODIFIERS=@im=fcitx
 # export QT_IM_MODULE=fcitx
 # export GTK_IM_MODULE=fcitx
+export FZF_COMPLETION_TRIGGER='::'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
