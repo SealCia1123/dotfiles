@@ -145,7 +145,7 @@ alias fedoraboot='sudo efibootmgr --bootnext 0004; sudo reboot'
 # set -o vi
 
 # source zsh syntax highlighting
-source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
