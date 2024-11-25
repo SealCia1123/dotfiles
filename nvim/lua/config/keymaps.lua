@@ -3,7 +3,8 @@
 -- Add any additional keymaps here
 
 local opts = { silent = true }
-
+vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true })
+vim.keymap.set("n", "<A-n>", ":vertical terminal<cr>")
 vim.keymap.set("n", "Y", "y$")
 vim.keymap.set("n", "dbw", "vbd")
 vim.keymap.set({ "n", "v" }, "<C-j>", "10jzz", opts)
