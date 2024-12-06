@@ -11,6 +11,11 @@ return {
         local configs = require("lspconfig/configs")
         local capabilities = vim.lsp.protocol.make_client_capabilities()
         capabilities.textDocument.completion.completionItem.snippetSupport = true
+        lspconfig.lua_ls.setup({
+            on_init = function(client, _)
+                client.server_capabilities.semanticTokensProvider = nil -- turn off semantic tokens
+            end,
+        })
         lspconfig.emmet_ls.setup({
             -- on_attach = on_attach,
             capabilities = capabilities,
@@ -133,6 +138,13 @@ return {
             -- return true if you don't want this server to be setup with lspconfig
             ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
             setup = {
+                rust_analyzer = function()
+                    require("lazyvim.util").lsp.on_attach(function(client, _)
+                        if client.name == "rust_analyzer" then
+                            client.server_capabilities.semanticTokensProvider = nil
+                        end
+                    end)
+                end,
                 -- example to setup with typescript.nvim
                 -- tsserver = function(_, opts)
                 --   require("typescript").setup({ server = opts })
