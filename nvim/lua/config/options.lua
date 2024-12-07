@@ -15,6 +15,7 @@ opt.listchars:append({
     trail = space,
     nbsp = space,
 })
+opt.shortmess = "ltToOCF"
 opt.cursorline = false
 opt.inccommand = "split"
 opt.smartcase = true
