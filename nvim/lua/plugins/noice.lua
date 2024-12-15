@@ -23,8 +23,8 @@ return {
                         min_height = 0,
                         width = "auto",
                         height = "auto",
-                        max_height = 10,
-                        max_width = 50,
+                        max_height = 7,
+                        max_width = 40,
                     },
                 }, -- merged with defaults from documentation
             },

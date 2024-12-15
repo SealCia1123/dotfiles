@@ -3,6 +3,34 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
+        indent = {
+            enabled = false,
+        },
+        ---@class snacks.scroll.Config
+        ---@field animate snacks.animate.Config
+        scroll = {
+            enabled = false,
+            animate = {
+                duration = { step = 15, total = 250 },
+                easing = "outExpo",
+                fps = 144,
+            },
+            -- what buffers to animate
+            filter = function(buf)
+                return vim.g.snacks_scroll ~= false and vim.b[buf].snacks_scroll ~= false
+            end,
+        },
+        ---@class snacks.input.Config
+        ---@field enabled? boolean
+        ---@field win? snacks.win.Config
+        ---@field icon? string
+        input = {
+            enabled = true,
+            icon = " ",
+            icon_hl = "SnacksInputIcon",
+            win = { style = "input", relative = "editor" },
+            expand = true,
+        },
         bigfile = { enabled = true },
         ---@class snacks.terminal.Config
         ---@field win? snacks.win.Config
@@ -83,7 +111,7 @@ return {
             refresh = 50, -- refresh at most every 50ms
         },
         quickfile = { enabled = true },
-        statuscolumn = { enabled = true },
+        statuscolumn = { enabled = false },
         words = { enabled = true },
         lazygit = { enabled = true },
     },

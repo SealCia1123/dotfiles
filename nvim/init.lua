@@ -1,6 +1,6 @@
 require("config.lazy")
-vim.o.cursorline = false
-vim.cmd.colorscheme("catppuccin")
-vim.o.completeopt = "menuone,noselect,preview"
-vim.opt.statuscolumn = no
-vim.opt.showtabline = 0
+vim.cmd.colorscheme("vague")
+-- vim.o.completeopt = "menuone,noselect,preview"
+require("oil").setup()
+require("harpoon")
+require("mini.statusline")

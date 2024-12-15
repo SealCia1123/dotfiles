@@ -1,12 +1,14 @@
 local space = " "
 local opt = vim.opt
 local set = vim.opt_local
+
 vim.api.nvim_create_autocmd("TermOpen", {
     group = vim.api.nvim_create_augroup("custom-term-open", {}),
     callback = function()
         set.number = false
         set.relativenumber = false
         set.scrolloff = 0
+        vim.bo.filetype = "terminal"
     end,
 })
 opt.listchars:append({
@@ -14,7 +16,10 @@ opt.listchars:append({
     lead = space,
     trail = space,
     nbsp = space,
+    tab = "  ",
 })
+opt.showtabline = 0
+opt.statuscolumn = ""
 opt.shortmess = "ltToOCF"
 opt.cursorline = false
 opt.inccommand = "split"
@@ -32,9 +37,9 @@ vim.o.encoding = "utf-8"
 
 -- set tabsize to 4 spaces
 vim.o.tabstop = 4
-vim.o.expandtab = true
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
+vim.o.expandtab = true
 vim.o.termguicolors = true
 vim.opt.relativenumber = true
 
