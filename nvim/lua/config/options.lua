@@ -44,6 +44,8 @@ vim.o.termguicolors = true
 vim.opt.relativenumber = true
 
 -- disable inline error
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+vim.diagnostic.config({
     virtual_text = false,
 })
+vim.o.updatetime = 100
+vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])
