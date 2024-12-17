@@ -1,6 +1,14 @@
 return {
     "folke/noice.nvim",
     opts = {
+        cmdline = {
+            view = "cmdline",
+        },
+        presets = {
+            bottom_search = true,
+            command_palette = false,
+            long_message_to_split = true,
+        },
         lsp = {
             -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
             override = {
