@@ -10,6 +10,13 @@ set("n", "<c-k>", "<c-w><c-k>")
 set("n", "<c-l>", "<c-w><c-l>")
 set("n", "<c-u>", "<c-u>zz")
 set("n", "<c-d>", "<c-d>zz")
+-- keymap for cmd mode
+set("c", "<C-h>", "<BS>")
+set("c", "<C-f>", "<right>")
+set("c", "<C-b>", "<left>")
+set("c", "<C-a>", "<home>")
+set("c", "<C-e>", "<end>")
+
 -- resize splits
 set("n", "<M-,>", "<c-w>5<")
 set("n", "<M-.>", "<c-w>5>")
