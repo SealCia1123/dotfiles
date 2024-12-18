@@ -18,6 +18,7 @@ opt.listchars:append({
     nbsp = space,
     tab = "  ",
 })
+opt.cmdheight = 0
 opt.showtabline = 0
 opt.statuscolumn = ""
 opt.shortmess = "ltToOCF"
