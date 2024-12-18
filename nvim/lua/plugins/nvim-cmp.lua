@@ -169,7 +169,8 @@ return {
                     -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
                 end,
             },
-            preselect = cmp.PreselectMode.None,
+            preselect = cmp.PreselectMode.Item,
+            completion = { completeopt = "menu,menuone" },
             view = {
                 docs = {
                     auto_open = true,
