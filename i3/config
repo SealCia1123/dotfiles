@@ -57,7 +57,8 @@ client.focused           $crust   #272727 #ffffff  #737373 #272727
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/polkit-gnome-authentication-agent-1
-exec --no-startup-id xautocfg
+# exec --no-startup-id xautocfg
+# exec xset r rate 300 50
 exec --no-startup-id xsettingsd
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -70,6 +71,7 @@ exec --no-startup-id i3status-title-on-bar
 # exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
 exec --no-startup-id picom --experimental-backend
 exec --no-startup-id ibus-daemon -rxRd
+exec --no-startup-id diodon
 # exec --no-startup-id albert
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -95,6 +97,7 @@ bindsym Mod4+q exec kitty
 bindsym Print exec flameshot gui
 # bindsym Mod4+space exec --no-startup-id gapplication launch io.ulauncher.Ulauncher
 bindsym Mod4+space exec --no-startup-id rofi -show drun
+# bindsym Ctrl+f exec ~/.local/script/tmux-sessionizer
 bindsym Mod1+space exec --no-startup-id dmenu_run -fn 'DejaVu Sans Mono-13'
 # bindsym Mod1+space exec --no-startup-id /home/sealcia/.local/bin/dmenu_run_history -fn 'DejaVu Sans Mono-13'
 # bindsym Mod4+space exec --no-startup-id /home/sealcia/.config/rofi/launchers/type-1/launcher.sh
@@ -132,10 +135,10 @@ bindsym Mod4+Mod1+l focus right
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym Mod4+j focus left
-bindsym Mod4+k focus down
-bindsym Mod4+l focus up
-bindsym Mod4+semicolon focus right
+bindsym Mod4+h focus left
+bindsym Mod4+l focus right
+bindsym Mod4+j focus down
+bindsym Mod4+k focus up
 
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Left focus left
@@ -156,7 +159,7 @@ bindsym Mod4+Shift+Up move up
 bindsym Mod4+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod4+h split h
+# bindsym Mod4+h split h
 
 # split in vertical orientation
 bindsym Mod4+v split v
