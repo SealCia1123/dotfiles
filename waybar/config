@@ -1,7 +1,7 @@
 {
 	"layer": "bottom", // Waybar at top layer
-	"position": "top", // Waybar position (top|bottom|left|right)
-	"height": 26, // Waybar height (to be removed for auto height)
+	"position": "bottom", // Waybar position (top|bottom|left|right)
+	"height": 22, // Waybar height (to be removed for auto height)
 	"spacing": 4, // Gaps between modules (4px)
 	"modules-left": [
 		"hyprland/workspaces"
@@ -28,7 +28,7 @@
 		"spacing": 10
 	},
 	"clock": {
-		"format": "  {:%R %A %d/%m/%y}",
+		"format": "  {:%R %A %Y-%m-%d}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"format-alt": "{:%Y-%m-%d}"
 	},
@@ -73,5 +73,15 @@
 		},
 		"tooltip-format": "{volume}% volume",
 		"on-click": "pavucontrol"
+	},
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}",
+		// "persistent_workspaces": {
+		// 	"1": [],
+		// 	"2": [],
+		// 	"3": [],
+		// 	"4": [],
+		// },
 	},
 }
