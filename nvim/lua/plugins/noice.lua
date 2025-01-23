@@ -17,7 +17,7 @@ return {
                 search_up = { kind = "search", pattern = "^%?", icon = " ", lang = "regex" },
                 filter = { pattern = "^:%s*!", icon = "$", lang = "bash" },
                 lua = { pattern = { "^:%s*lua%s+", "^:%s*lua%s*=%s*", "^:%s*=%s*" }, icon = "", lang = "lua" },
-                help = { pattern = "^:%s*he?l?p?%s+", icon = "" },
+                -- help = { pattern = "^:%s*he?l?p?%s+", icon = "" },
                 input = { view = "cmdline_input", icon = "󰥻 " }, -- Used by input()
                 -- lua = false, -- to disable a format, set to `false`
             },
@@ -26,6 +26,7 @@ return {
             bottom_search = true,
             command_palette = false,
             long_message_to_split = true,
+            inc_rename = false,
         },
         lsp = {
             -- override markdown rendering so that **cmp** and other plugins use **Treesitter**

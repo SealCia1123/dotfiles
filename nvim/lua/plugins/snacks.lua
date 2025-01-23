@@ -75,6 +75,7 @@ return {
         dashboard = {
             enabled = false,
         },
+
         ---@class snacks.notifier.Config
         ---@field keep? fun(notif: snacks.notifier.Notif): boolean # global keep function
         notifier = {
@@ -84,7 +85,7 @@ return {
             height = { min = 1, max = 0.6 },
             -- editor margin to keep free. tabline and statusline are taken into account automatically
             margin = { top = 0, right = 0, bottom = 0 },
-            padding = true, -- add 1 cell of left/right padding to the notification window
+            padding = false, -- add 1 cell of left/right padding to the notification window
             sort = { "level", "added" }, -- sort by level and time
             -- minimum log level to display. TRACE is the lowest
             -- all notifications are stored in history
@@ -100,7 +101,7 @@ return {
                 return vim.fn.getcmdpos() > 0
             end,
             ---@type snacks.notifier.style
-            style = "compact",
+            style = "minimal",
             top_down = false, -- place notifications from top to bottom
             date_format = "%R", -- time format for notifications
             -- format for footer when more lines are available
@@ -114,5 +115,8 @@ return {
         statuscolumn = { enabled = false },
         words = { enabled = true },
         lazygit = { enabled = true },
+        git = {
+            enabled = true,
+        },
     },
 }

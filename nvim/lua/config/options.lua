@@ -1,7 +1,6 @@
 local space = " "
 local opt = vim.opt
 local set = vim.opt_local
-
 vim.api.nvim_create_autocmd("TermOpen", {
     group = vim.api.nvim_create_augroup("custom-term-open", {}),
     callback = function()
@@ -11,6 +10,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
         vim.bo.filetype = "terminal"
     end,
 })
+
 opt.listchars:append({
     multispace = space,
     lead = space,
@@ -18,7 +18,7 @@ opt.listchars:append({
     nbsp = space,
     tab = "  ",
 })
-opt.cmdheight = 0
+opt.cmdheight = 1
 opt.showtabline = 0
 opt.statuscolumn = ""
 opt.shortmess = "ltToOCF"
@@ -48,5 +48,3 @@ vim.opt.relativenumber = true
 vim.diagnostic.config({
     virtual_text = false,
 })
-vim.o.updatetime = 100
-vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])

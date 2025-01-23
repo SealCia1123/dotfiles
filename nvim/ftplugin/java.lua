@@ -95,6 +95,7 @@ local config = {
         },
         textDocument = {
             completion = {
+                completeopt = "menu,menuone,fuzzy",
                 completionItem = {
                     snippentSupport = true,
                 },
@@ -103,12 +104,17 @@ local config = {
     },
     cmd = {
         "java",
+        "-XX:+UseParallelGC",
+        "-XX:GCTimeRatio=4",
+        "-XX:AdaptiveSizePolicyWeight=90",
+        "-Dsun.zip.disableMemoryMapping=true",
+        "-Xmx2g",
+        "-Xms100m",
         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
         "-Dosgi.bundles.defaultStartLevel=4",
         "-Declipse.product=org.eclipse.jdt.ls.core.product",
         "-Dlog.protocol=true",
         "-Dlog.level=ALL",
-        "-Xmx1g",
         "--add-modules=ALL-SYSTEM",
         "--add-opens",
         "java.base/java.util=ALL-UNNAMED",

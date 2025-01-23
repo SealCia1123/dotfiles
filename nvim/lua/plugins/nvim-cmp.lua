@@ -193,7 +193,7 @@ return {
                         -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
                         -- can also be a function to dynamically calculate max width such as
                         -- menu = function() return math.floor(0.45 * vim.o.columns) end,
-                        menu = 10, -- leading text (labelDetails)
+                        menu = 20, -- leading text (labelDetails)
                         abbr = 50, -- actual suggestion item
                     },
                     ellipsis_char = "...", -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
@@ -263,11 +263,11 @@ return {
             mapping = cmp.mapping.preset.insert({
                 ["<C-f>"] = cmp_action.luasnip_jump_forward(),
                 ["<C-b>"] = cmp_action.luasnip_jump_backward(),
-                ["<C-k>"] = cmp.mapping.scroll_docs(-4),
-                ["<C-j>"] = cmp.mapping.scroll_docs(4),
+                ["<C-k>"] = cmp.mapping.scroll_docs(-1),
+                ["<C-j>"] = cmp.mapping.scroll_docs(1),
                 ["<C-Space>"] = cmp.mapping.complete(),
-                ["<C-e>"] = cmp.mapping.confirm({ select = false }),
-                ["<CR>"] = cmp.mapping.confirm({ select = false }),
+                ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+                --["<CR>"] = cmp.mapping.confirm({ select = true }),
                 ["<C-g>"] = cmp.mapping.close_docs(),
                 ["<C-]>"] = cmp.mapping.close(),
             }),
