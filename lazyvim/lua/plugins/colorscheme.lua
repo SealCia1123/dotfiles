@@ -115,4 +115,7 @@ return {
       })
     end,
   },
+  {
+    "cdmill/neomodern.nvim",
+  },
 }
