@@ -20,8 +20,8 @@ set("c", "<C-a>", "<home>")
 set("c", "<C-e>", "<end>")
 
 -- resize splits
-set("n", "<M-,>", "<c-w>5<")
-set("n", "<M-.>", "<c-w>5>")
+set("n", "<M-.>", "<c-w>5<")
+set("n", "<M-,>", "<c-w>5>")
 set("n", "<M-t>", "<C-W>+")
 set("n", "<M-s>", "<C-W>-")
 
