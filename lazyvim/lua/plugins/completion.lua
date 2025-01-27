@@ -9,6 +9,7 @@ return {
   },
   dependencies = {
     "rafamadriz/friendly-snippets",
+    "kristijanhusak/vim-dadbod-completion",
     -- add blink.compat to dependencies
     {
       "saghen/blink.compat",

@@ -1,14 +1,9 @@
 return {
   "kristijanhusak/vim-dadbod-ui",
-  dependencies = {
-    { "tpope/vim-dadbod", lazy = true },
-    { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true }, -- Optional
-  },
-  cmd = {
-    "DBUI",
-    "DBUIToggle",
-    "DBUIAddConnection",
-    "DBUIFindBuffer",
+  cmd = { "DBUI", "DBUIToggle", "DBUIAddConnection", "DBUIFindBuffer" },
+  dependencies = "vim-dadbod",
+  keys = {
+    { "<leader>D", "<cmd>DBUIToggle<CR>", desc = "Toggle DBUI" },
   },
   init = function()
     local data_path = vim.fn.stdpath("data")
@@ -19,6 +14,11 @@ return {
     vim.g.db_ui_tmp_query_location = data_path .. "/dadbod_ui/tmp"
     vim.g.db_ui_use_nerd_fonts = true
     vim.g.db_ui_use_nvim_notify = true
+
+    -- NOTE: The default behavior of auto-execution of queries on save is disabled
+    -- this is useful when you have a big query that you don't want to run every time
+    -- you save the file running those queries can crash neovim to run use the
+    -- default keymap: <leader>S
     vim.g.db_ui_execute_on_save = false
   end,
 }
