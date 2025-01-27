@@ -1,110 +1,143 @@
 return {
-  -- {
-  --   "saghen/blink.cmp",
-  --   event = "InsertEnter",
-  --   version = "v0.*", -- REQUIRED `tag` needed to download pre-built binary
-  --   opts = {
-  --     highlight = {
-  --       use_nvim_cmp_as_default = true,
-  --     },
-  --     sources = {
-  --       completion = {
-  --         enabled_providers = { "lsp", "path", "snippets", "buffer" },
-  --       },
-  --       providers = {
-  --         snippets = {
-  --           min_keyword_length = 1, -- don't show when triggered manually, useful for JSON keys
-  --           score_offset = -1,
-  --         },
-  --         path = {
-  --           opts = { get_cwd = vim.uv.cwd },
-  --         },
-  --         buffer = {
-  --           fallback_for = {}, -- disable being fallback for LSP
-  --           max_items = 4,
-  --           min_keyword_length = 4,
-  --           score_offset = -3,
-  --         },
-  --       },
-  --     },
-  --     keymap = {
-  --       -- ["<D-c>"] = { "show" },
-  --       ["<C-e>"] = { "hide" },
-  --       ["<CR>"] = { "select_and_accept", "fallback" },
-  --       ["<C-n>"] = { "select_next" },
-  --       ["<C-p>"] = { "select_prev" },
-  --       ["<Down>"] = { "select_next", "fallback" },
-  --       ["<Up>"] = { "select_prev", "fallback" },
-  --       ["<C-j>"] = { "scroll_documentation_down" },
-  --       ["<C-k>"] = { "scroll_documentation_up" },
-  --       ["<C-f>"] = { "snippet_forward", "fallback" },
-  --       ["<C-b>"] = { "snippet_backward", "fallback" },
-  --     },
-  --     windows = {
-  --       documentation = {
-  --         border = vim.g.borderStyle,
-  --         min_width = 15,
-  --         max_width = 45, -- smaller, due to https://github.com/Saghen/blink.cmp/issues/194
-  --         max_height = 10,
-  --         auto_show = true,
-  --         auto_show_delay_ms = 250,
-  --       },
-  --       autocomplete = {
-  --         border = vim.g.borderStyle,
-  --         min_width = 10, -- max_width controlled by draw-function
-  --         max_height = 10,
-  --         cycle = { from_top = false }, -- cycle at bottom, but not at the top
-  --         draw = function(ctx)
-  --           -- https://github.com/Saghen/blink.cmp/blob/9846c2d2bfdeaa3088c9c0143030524402fffdf9/lua/blink/cmp/types.lua#L1-L6
-  --           -- https://github.com/Saghen/blink.cmp/blob/9846c2d2bfdeaa3088c9c0143030524402fffdf9/lua/blink/cmp/windows/autocomplete.lua#L298-L349
-  --           -- differentiate LSP snippets from user snippets and emmet snippets
-  --           local source, client = ctx.item.source_id, ctx.item.client_id
-  --           if client and vim.lsp.get_client_by_id(client).name == "emmet_language_server" then
-  --             source = "emmet"
-  --           end
-  --
-  --           local sourceIcons = { snippets = "󰩫", buffer = "󰦨", emmet = "" }
-  --           local icon = sourceIcons[source] or ctx.kind_icon
-  --
-  --           return {
-  --             {
-  --               " " .. ctx.item.label .. " ",
-  --               fill = true,
-  --               hl_group = ctx.deprecated and "BlinkCmpLabelDeprecated" or "BlinkCmpLabel",
-  --               max_width = 40,
-  --             },
-  --             { icon .. " ", hl_group = "BlinkCmpKind" .. ctx.kind },
-  --           }
-  --         end,
-  --       },
-  --     },
-  --     kind_icons = {
-  --       Text = "",
-  --       Method = "󰊕",
-  --       Function = "󰊕",
-  --       Constructor = "",
-  --       Field = "󰇽",
-  --       Variable = "󰂡",
-  --       Class = "󰜁",
-  --       Interface = "",
-  --       Module = "",
-  --       Property = "󰜢",
-  --       Unit = "",
-  --       Value = "󰎠",
-  --       Enum = "",
-  --       Keyword = "󰌋",
-  --       Snippet = "󰒕",
-  --       Color = "󰏘",
-  --       Reference = "",
-  --       File = "",
-  --       Folder = "󰉋",
-  --       EnumMember = "",
-  --       Constant = "󰏿",
-  --       Struct = "",
-  --       Event = "",
-  --       Operator = "󰆕",
-  --       TypeParameter = "󰅲",
-  --     },
-  --   },
-  -- },
+  "saghen/blink.cmp",
+  version = not vim.g.lazyvim_blink_main and "*",
+  build = vim.g.lazyvim_blink_main and "cargo build --release",
+  opts_extend = {
+    "sources.completion.enabled_providers",
+    "sources.compat",
+    "sources.default",
+  },
+  dependencies = {
+    "rafamadriz/friendly-snippets",
+    -- add blink.compat to dependencies
+    {
+      "saghen/blink.compat",
+      optional = true, -- make optional so it's only enabled if any extras need it
+      opts = {},
+      version = not vim.g.lazyvim_blink_main and "*",
+    },
+  },
+  event = "InsertEnter",
+
+  ---@module 'blink.cmp'
+  ---@type blink.cmp.Config
+  opts = {
+    snippets = {
+      expand = function(snippet, _)
+        return LazyVim.cmp.expand(snippet)
+      end,
+    },
+    appearance = {
+      -- sets the fallback highlight groups to nvim-cmp's highlight groups
+      -- useful for when your theme doesn't support blink.cmp
+      -- will be removed in a future release, assuming themes add support
+      use_nvim_cmp_as_default = false,
+      -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
+      -- adjusts spacing to ensure icons are aligned
+      nerd_font_variant = "mono",
+    },
+    completion = {
+      accept = {
+        -- experimental auto-brackets support
+        auto_brackets = {
+          enabled = true,
+        },
+      },
+      menu = {
+        draw = {
+          treesitter = { "lsp" },
+        },
+      },
+      documentation = {
+        auto_show = true,
+        auto_show_delay_ms = 200,
+      },
+      ghost_text = {
+        enabled = false,
+      },
+    },
+
+    -- experimental signature help support
+    -- signature = { enabled = true },
+
+    sources = {
+      -- adding any nvim-cmp sources here will enable them
+      -- with blink.compat
+      compat = {},
+      default = { "lsp", "dadbod", "path", "snippets", "buffer" },
+      providers = {
+        dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
+      },
+      cmdline = {},
+    },
+
+    keymap = {
+      preset = "enter",
+      ["<C-y>"] = { "select_and_accept" },
+    },
+  },
+  ---@param opts blink.cmp.Config | { sources: { compat: string[] } }
+  config = function(_, opts)
+    -- setup compat sources
+    local enabled = opts.sources.default
+    for _, source in ipairs(opts.sources.compat or {}) do
+      opts.sources.providers[source] = vim.tbl_deep_extend(
+        "force",
+        { name = source, module = "blink.compat.source" },
+        opts.sources.providers[source] or {}
+      )
+      if type(enabled) == "table" and not vim.tbl_contains(enabled, source) then
+        table.insert(enabled, source)
+      end
+    end
+
+    -- add ai_accept to <Tab> key
+    if not opts.keymap["<Tab>"] then
+      if opts.keymap.preset == "super-tab" then -- super-tab
+        opts.keymap["<Tab>"] = {
+          require("blink.cmp.keymap.presets")["super-tab"]["<Tab>"][1],
+          LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
+          "fallback",
+        }
+      else -- other presets
+        opts.keymap["<Tab>"] = {
+          LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
+          "fallback",
+        }
+      end
+    end
+
+    -- Unset custom prop to pass blink.cmp validation
+    opts.sources.compat = nil
+
+    -- check if we need to override symbol kinds
+    for _, provider in pairs(opts.sources.providers or {}) do
+      ---@cast provider blink.cmp.SourceProviderConfig|{kind?:string}
+      if provider.kind then
+        local CompletionItemKind = require("blink.cmp.types").CompletionItemKind
+        local kind_idx = #CompletionItemKind + 1
+
+        CompletionItemKind[kind_idx] = provider.kind
+        ---@diagnostic disable-next-line: no-unknown
+        CompletionItemKind[provider.kind] = kind_idx
+
+        ---@type fun(ctx: blink.cmp.Context, items: blink.cmp.CompletionItem[]): blink.cmp.CompletionItem[]
+        local transform_items = provider.transform_items
+        ---@param ctx blink.cmp.Context
+        ---@param items blink.cmp.CompletionItem[]
+        provider.transform_items = function(ctx, items)
+          items = transform_items and transform_items(ctx, items) or items
+          for _, item in ipairs(items) do
+            item.kind = kind_idx or item.kind
+          end
+          return items
+        end
+
+        -- Unset custom prop to pass blink.cmp validation
+        provider.kind = nil
+      end
+    end
+
+    require("blink.cmp").setup(opts)
+  end,
 }
