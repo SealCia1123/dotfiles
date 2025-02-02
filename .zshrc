@@ -140,7 +140,7 @@ alias df='df -h'
 
 # Boot to windows/fedora
 alias winboot='sudo efibootmgr --bootnext 0002; sudo reboot'
-alias fedoraboot='sudo efibootmgr --bootnext 0004; sudo reboot'
+alias fedoraboot='sudo efibootmgr --bootnext 0005; sudo reboot'
 
 # Enable vim mode in terminal
 # set -o vi
