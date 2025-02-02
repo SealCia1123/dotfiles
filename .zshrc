@@ -133,8 +133,9 @@ alias bsp-logout='bspc quit'
 
 # TMUX shortcuts
 alias t="tmux new -s home"
-alias ta='tmux attach'
+alias ta='tmux attach -t'
 alias tk='tmux kill-session -t'
+alias tl='tmux ls'
 alias df='df -h'
 
 # Boot to windows/fedora
