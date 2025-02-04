@@ -4,7 +4,6 @@
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.lang.java",
-    "lazyvim.plugins.extras.lang.sql",
     "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
   "news": {

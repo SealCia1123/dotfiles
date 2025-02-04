@@ -32,7 +32,7 @@ return {
       -- sets the fallback highlight groups to nvim-cmp's highlight groups
       -- useful for when your theme doesn't support blink.cmp
       -- will be removed in a future release, assuming themes add support
-      use_nvim_cmp_as_default = false,
+      use_nvim_cmp_as_default = true,
       -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
       -- adjusts spacing to ensure icons are aligned
       nerd_font_variant = "mono",
@@ -73,8 +73,19 @@ return {
     },
 
     keymap = {
-      preset = "enter",
+      preset = "none",
+      ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+      ["<C-e>"] = { "hide" },
       ["<C-y>"] = { "select_and_accept" },
+
+      ["<Up>"] = { "select_prev", "fallback" },
+      ["<Down>"] = { "select_next", "fallback" },
+      ["<C-p>"] = { "select_prev", "fallback" },
+      ["<C-n>"] = { "select_next", "fallback" },
+      ["<C-k>"] = { "scroll_documentation_up", "fallback" },
+      ["<C-j>"] = { "scroll_documentation_down", "fallback" },
+      ["<C-f>"] = { "snippet_forward", "fallback" },
+      ["<C-b>"] = { "snippet_backward", "fallback" },
     },
   },
   ---@param opts blink.cmp.Config | { sources: { compat: string[] } }

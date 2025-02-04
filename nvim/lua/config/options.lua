@@ -36,10 +36,10 @@ vim.scriptencoding = "utf-8"
 opt.encoding = "utf-8"
 vim.o.encoding = "utf-8"
 
--- set tabsize to 4 spaces
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
+-- set tabsize to 2 spaces
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.termguicolors = true
 vim.opt.relativenumber = true
