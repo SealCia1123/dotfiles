@@ -1,5 +1,5 @@
-set default-fg                "#11111B"
-set default-bg 			          "#11111B"
+set default-fg                "#0e0e0e"
+set default-bg 			          "#000000"
 
 set completion-bg		          "#313244"
 set completion-fg		          "#11111B"
@@ -22,11 +22,11 @@ set inputbar-fg			          "#CDD6F4"
 set inputbar-bg 		          "#313244"
 
 set recolor                   "true"
-set recolor-lightcolor		    "#11111B"
+set recolor-lightcolor		    "#0e0e0e"
 set recolor-darkcolor		      "#CDD6F4"
 
 set index-fg			            "#CDD6F4"
-set index-bg			            "#11111B"
+set index-bg			            "#000000"
 set index-active-fg		        "#CDD6F4"
 set index-active-bg		        "#313244"
 
