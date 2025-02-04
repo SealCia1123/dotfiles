@@ -1,0 +1,371 @@
+{
+   "checksum": "bc2de3da554d22ab474794d5f2325f9e",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13383141763884038",
+               "date_last_used": "0",
+               "guid": "7812bcd4-d155-4e1b-9779-3c4c8acff7d6",
+               "id": "6",
+               "name": "YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/"
+            }, {
+               "date_added": "13383141763884069",
+               "date_last_used": "0",
+               "guid": "6f978fbc-dce3-4113-b564-da175b2592f8",
+               "id": "7",
+               "name": "C Must Die - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=RJ_6KZRg-HE"
+            }, {
+               "date_added": "13383141763884087",
+               "date_last_used": "0",
+               "guid": "3a30c290-2763-4dd0-b9b0-d99966bb4b8b",
+               "id": "8",
+               "name": "Why Buying GPUs Is a Disaster - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=ui4JBaCt4g8&t=74s"
+            }, {
+               "date_added": "13383141763884107",
+               "date_last_used": "0",
+               "guid": "03d0e3ff-3a96-40fa-934e-e1fc0d42b8d0",
+               "id": "9",
+               "name": "Learning Assembly Because I Hate Myself - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=S2I3V0bqmr8&t=9s"
+            }, {
+               "date_added": "13383141763884125",
+               "date_last_used": "0",
+               "guid": "02b31944-76f3-43f5-b3a8-2cbc5d475286",
+               "id": "10",
+               "name": "[EPILEPSY WARNING] How fast should an unoptimized terminal run? - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=hxM8QmyZXtg"
+            }, {
+               "date_added": "13383141763884143",
+               "date_last_used": "0",
+               "guid": "564b729d-95be-4078-8e75-d0a002c66c8a",
+               "id": "11",
+               "name": "Why Are Threads Needed On Single Core Processors - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=M9HHWFp84f0&t=3s"
+            }, {
+               "date_added": "13383141763884160",
+               "date_last_used": "0",
+               "guid": "faa547f9-e87d-4177-95e5-f15c82fbf874",
+               "id": "12",
+               "name": "The Art of Code - Dylan Beattie - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=6avJHaC3C2U&list=PLvaIU2QC2uvFnVxXe-XzXJfd4dXGz5qBB"
+            }, {
+               "date_added": "13383141763884181",
+               "date_last_used": "0",
+               "guid": "c5e6ff26-3160-4427-8ab0-da2e38e5b064",
+               "id": "13",
+               "name": "Git Tutorial For Dummies - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=mJ-qvsxPHpY"
+            }, {
+               "children": [ {
+                  "date_added": "13383141763884204",
+                  "date_last_used": "0",
+                  "guid": "f57e236e-1889-40ae-8ba0-211b8763fbd0",
+                  "id": "15",
+                  "name": "Learn to become a modern Java developer",
+                  "type": "url",
+                  "url": "https://roadmap.sh/java"
+               }, {
+                  "date_added": "13383141763884222",
+                  "date_last_used": "0",
+                  "guid": "7edbd601-4dad-4f5a-9ba2-0581d4fae17a",
+                  "id": "16",
+                  "name": "The Lox Language · Crafting Interpreters",
+                  "type": "url",
+                  "url": "https://www.craftinginterpreters.com/the-lox-language.html"
+               }, {
+                  "date_added": "13383141763884240",
+                  "date_last_used": "0",
+                  "guid": "40ef4abf-7d8e-457e-9998-7bc6a45c47de",
+                  "id": "17",
+                  "name": "Java Concurrency and Multithreading Tutorial",
+                  "type": "url",
+                  "url": "https://jenkov.com/tutorials/java-concurrency/index.html"
+               } ],
+               "date_added": "13383141763884197",
+               "date_last_used": "0",
+               "date_modified": "13383141763884240",
+               "guid": "e171fcd9-81ba-4810-a2b7-36fa9e237696",
+               "id": "14",
+               "name": "",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13383141763884267",
+                  "date_last_used": "0",
+                  "guid": "fda16a4e-d04f-4630-83e8-ef2aa97bc641",
+                  "id": "19",
+                  "name": "Âm thanh tội phạm 1 - Voice",
+                  "type": "url",
+                  "url": "https://phim.nguonc.com/phim/am-thanh-toi-pham-1"
+               }, {
+                  "date_added": "13383141763884285",
+                  "date_last_used": "0",
+                  "guid": "c3927910-1e7e-4b86-b3c0-9a682398c0a6",
+                  "id": "20",
+                  "name": "Xem phim Silo (Mùa 2) | Silo Season 2 Full HD Vietsub online | BluPhim",
+                  "type": "url",
+                  "url": "https://bluphim2.com/xem-phim/silo-season-2-8917/tap-5?sv2=true&c=64"
+               }, {
+                  "date_added": "13383141763884308",
+                  "date_last_used": "0",
+                  "guid": "d3c08d18-e515-4518-8e27-6f7ab160c1c6",
+                  "id": "21",
+                  "name": "Phim Trăm Năm Cô Đơn | One Hundred Years of Solitude Full HD Vietsub | BluPhim",
+                  "type": "url",
+                  "url": "https://bluphim2.com/phim/one-hundred-years-of-solitude-9811?c=77"
+               }, {
+                  "date_added": "13383141763884331",
+                  "date_last_used": "0",
+                  "guid": "f5f597b7-ae34-4172-93f4-dc1955dea136",
+                  "id": "22",
+                  "name": "Xem phim Cunk Nói Về Trái Đất | Cunk on Earth Full HD Vietsub online | BluPhim",
+                  "type": "url",
+                  "url": "https://bluphim2.com/xem-phim/cunk-on-earth-2871/tap-2?c=71"
+               } ],
+               "date_added": "13383141763884261",
+               "date_last_used": "0",
+               "date_modified": "13383141763884331",
+               "guid": "c09c3bd8-3eab-46c9-8014-180418a744f5",
+               "id": "18",
+               "name": "",
+               "type": "folder"
+            }, {
+               "date_added": "13383141763884353",
+               "date_last_used": "0",
+               "guid": "c4339474-97df-4455-a94d-1391d7500132",
+               "id": "23",
+               "name": "Xem phim Nghi Phạm Cận Kề | Such a Close Traitor Full HD Vietsub online | BluPhim",
+               "type": "url",
+               "url": "https://bluphim2.com/xem-phim/such-a-close-traitor-8087/tap-5?c=14"
+            }, {
+               "date_added": "13383141763884376",
+               "date_last_used": "0",
+               "guid": "97d93f3d-80bc-40b1-bec0-362bfeb48471",
+               "id": "24",
+               "name": "New Tab",
+               "type": "url",
+               "url": "chrome://newtab/"
+            } ],
+            "date_added": "13383141763883919",
+            "date_last_used": "0",
+            "date_modified": "13383141763884376",
+            "guid": "bbabfba6-2fde-48de-97e2-daad0ab34f03",
+            "id": "5",
+            "name": "Thorium",
+            "type": "folder"
+         } ],
+         "date_added": "13383141717019877",
+         "date_last_used": "0",
+         "date_modified": "13383141763884421",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [  ],
+            "date_added": "13383141816038369",
+            "date_last_used": "0",
+            "date_modified": "13383141816038369",
+            "guid": "631b0994-7ef1-4bc7-9efb-4127d0f81c5f",
+            "id": "25",
+            "name": "New folder",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13383141816038755",
+               "date_last_used": "0",
+               "guid": "3fc1d74a-244a-4d01-9d4a-b384d54edd94",
+               "id": "27",
+               "name": "YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/"
+            }, {
+               "date_added": "13383141816038837",
+               "date_last_used": "0",
+               "guid": "c8195fa6-f65e-4b69-90bf-01a576c70496",
+               "id": "28",
+               "name": "C Must Die - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=RJ_6KZRg-HE"
+            }, {
+               "date_added": "13383141816038913",
+               "date_last_used": "0",
+               "guid": "52e4c5be-3f82-44a3-87f7-9ea59c7f835f",
+               "id": "29",
+               "name": "Why Buying GPUs Is a Disaster - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=ui4JBaCt4g8&t=74s"
+            }, {
+               "date_added": "13383141816038993",
+               "date_last_used": "0",
+               "guid": "79005db1-d97c-4363-8dc7-71739d686286",
+               "id": "30",
+               "name": "Learning Assembly Because I Hate Myself - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=S2I3V0bqmr8&t=9s"
+            }, {
+               "date_added": "13383141816039068",
+               "date_last_used": "0",
+               "guid": "04d7774a-b650-4277-9c98-f590542eb2a8",
+               "id": "31",
+               "name": "[EPILEPSY WARNING] How fast should an unoptimized terminal run? - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=hxM8QmyZXtg"
+            }, {
+               "date_added": "13383141816039147",
+               "date_last_used": "0",
+               "guid": "da59a586-06bf-4730-9157-6bfeb6afa9a1",
+               "id": "32",
+               "name": "Why Are Threads Needed On Single Core Processors - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=M9HHWFp84f0&t=3s"
+            }, {
+               "date_added": "13383141816039222",
+               "date_last_used": "0",
+               "guid": "9595a462-4dd6-4c8a-81b0-232a78524d5e",
+               "id": "33",
+               "name": "The Art of Code - Dylan Beattie - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=6avJHaC3C2U&list=PLvaIU2QC2uvFnVxXe-XzXJfd4dXGz5qBB"
+            }, {
+               "date_added": "13383141816039302",
+               "date_last_used": "0",
+               "guid": "390f22f3-1e98-4451-92cb-ca1bf34fc28f",
+               "id": "34",
+               "name": "Git Tutorial For Dummies - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=mJ-qvsxPHpY"
+            }, {
+               "children": [ {
+                  "date_added": "13383141816039402",
+                  "date_last_used": "0",
+                  "guid": "9f177514-1069-46b0-8215-6edbb4101963",
+                  "id": "36",
+                  "name": "Learn to become a modern Java developer",
+                  "type": "url",
+                  "url": "https://roadmap.sh/java"
+               }, {
+                  "date_added": "13383141816039475",
+                  "date_last_used": "0",
+                  "guid": "8c7ffef6-7d72-4182-b29c-e2b5e6c41063",
+                  "id": "37",
+                  "name": "The Lox Language · Crafting Interpreters",
+                  "type": "url",
+                  "url": "https://www.craftinginterpreters.com/the-lox-language.html"
+               }, {
+                  "date_added": "13383141816039551",
+                  "date_last_used": "0",
+                  "guid": "918201e6-3b36-4036-a0fc-1ce1a5a38ed2",
+                  "id": "38",
+                  "name": "Java Concurrency and Multithreading Tutorial",
+                  "type": "url",
+                  "url": "https://jenkov.com/tutorials/java-concurrency/index.html"
+               } ],
+               "date_added": "13383141816039367",
+               "date_last_used": "0",
+               "date_modified": "13383141816039551",
+               "guid": "57645b1f-600b-4a83-a7a1-ee25bfa24fa3",
+               "id": "35",
+               "name": "",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13383141816039658",
+                  "date_last_used": "0",
+                  "guid": "5e060140-5b17-4e93-8c20-d7270ac295a5",
+                  "id": "40",
+                  "name": "Âm thanh tội phạm 1 - Voice",
+                  "type": "url",
+                  "url": "https://phim.nguonc.com/phim/am-thanh-toi-pham-1"
+               }, {
+                  "date_added": "13383141816039729",
+                  "date_last_used": "0",
+                  "guid": "a9b071dc-b1e6-4de1-872d-4f922ad06a8a",
+                  "id": "41",
+                  "name": "Xem phim Silo (Mùa 2) | Silo Season 2 Full HD Vietsub online | BluPhim",
+                  "type": "url",
+                  "url": "https://bluphim2.com/xem-phim/silo-season-2-8917/tap-5?sv2=true&c=27"
+               }, {
+                  "date_added": "13383141816039837",
+                  "date_last_used": "0",
+                  "guid": "6294e732-901f-4327-802b-ad6aec92af88",
+                  "id": "42",
+                  "name": "Phim Trăm Năm Cô Đơn | One Hundred Years of Solitude Full HD Vietsub | BluPhim",
+                  "type": "url",
+                  "url": "https://bluphim2.com/phim/one-hundred-years-of-solitude-9811?c=77"
+               }, {
+                  "date_added": "13383141816039923",
+                  "date_last_used": "0",
+                  "guid": "280079bb-340b-47d2-a528-06868f111945",
+                  "id": "43",
+                  "name": "Xem phim Cunk Nói Về Trái Đất | Cunk on Earth Full HD Vietsub online | BluPhim",
+                  "type": "url",
+                  "url": "https://bluphim2.com/xem-phim/cunk-on-earth-2871/tap-2?c=71"
+               } ],
+               "date_added": "13383141816039624",
+               "date_last_used": "0",
+               "date_modified": "13383141816039923",
+               "guid": "64866476-be23-4c83-91fc-9eba1ac3e3e7",
+               "id": "39",
+               "name": "",
+               "type": "folder"
+            }, {
+               "date_added": "13383141816040011",
+               "date_last_used": "0",
+               "guid": "49316bc5-ce65-448c-a2e5-30f19fcd703e",
+               "id": "44",
+               "name": "Xem phim Nghi Phạm Cận Kề | Such a Close Traitor Full HD Vietsub online | BluPhim",
+               "type": "url",
+               "url": "https://bluphim2.com/xem-phim/such-a-close-traitor-8087/tap-5?c=14"
+            }, {
+               "date_added": "13383141816040091",
+               "date_last_used": "0",
+               "guid": "def5f505-5ae5-4b39-b7a4-df2320062371",
+               "id": "45",
+               "name": "New Tab",
+               "type": "url",
+               "url": "chrome://newtab/"
+            } ],
+            "date_added": "13383141816038703",
+            "date_last_used": "0",
+            "date_modified": "13383141816040091",
+            "guid": "0fad4665-4289-48e5-8bae-e9559c8b5884",
+            "id": "26",
+            "name": "thorium",
+            "type": "folder"
+         } ],
+         "date_added": "13383141717019887",
+         "date_last_used": "0",
+         "date_modified": "13383141816040147",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13383141717019889",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
