@@ -5,7 +5,7 @@ local set = vim.keymap.set
 set("n", "<leader>rn", ":IncRename ")
 -- jump between buffers
 set("n", "<c-j>", "<c-w><c-j>")
-set("n", "<leader>ff", ":FzfLua files<CR>", opts)
+-- set("n", "<leader>ff", ":FzfLua files<CR>", opts)
 set("n", "<c-h>", "<c-w><c-h>")
 set("n", "<c-k>", "<c-w><c-k>")
 set("n", "<c-l>", "<c-w><c-l>")
