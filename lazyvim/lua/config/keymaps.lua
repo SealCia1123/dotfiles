@@ -5,7 +5,7 @@ local set = vim.keymap.set
 set("n", "<leader>rn", ":IncRename ")
 -- jump between buffers
 set("n", "<c-j>", "<c-w><c-j>")
-set("n", "<leader>ff", ":FzfLua files<CR>", opts)
+-- set("n", "<leader>ff", ":FzfLua files<CR>", opts)
 set("n", "<c-h>", "<c-w><c-h>")
 set("n", "<c-k>", "<c-w><c-k>")
 set("n", "<c-l>", "<c-w><c-l>")
@@ -33,8 +33,3 @@ set("n", "dbw", "vbd")
 set("n", "O", "O<esc>", opts)
 set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 set("v", "<leader>p", "_dP'")
-
--- Reload config
-vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
-vim.keymap.set("n", "<space>x", ":.lua<CR>")
-vim.keymap.set("v", "<space>x", ":lua<CR>")

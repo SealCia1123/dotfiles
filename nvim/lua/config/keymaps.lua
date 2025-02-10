@@ -5,12 +5,14 @@ local set = vim.keymap.set
 set("n", "<leader>rn", ":IncRename ")
 -- jump between buffers
 set("n", "<c-j>", "<c-w><c-j>")
--- set("n", "<leader>ff", ":FzfLua files<CR>", opts)
 set("n", "<c-h>", "<c-w><c-h>")
 set("n", "<c-k>", "<c-w><c-k>")
 set("n", "<c-l>", "<c-w><c-l>")
 -- set("n", "<c-u>", "<c-u>zz")
 -- set("n", "<c-d>", "<c-d>zz")
+
+-- jump to next diagnostics
+set("n", "<leader>dn", require("telescope.builtin").diagnostics)
 
 -- keymap for cmd mode
 set("c", "<C-h>", "<BS>")
@@ -35,6 +37,4 @@ set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 set("v", "<leader>p", "_dP'")
 
 -- Reload config
-vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
-vim.keymap.set("n", "<space>x", ":.lua<CR>")
-vim.keymap.set("v", "<space>x", ":lua<CR>")
+-- vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")

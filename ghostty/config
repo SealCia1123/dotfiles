@@ -6,7 +6,7 @@ cursor-style-blink = false
 background-opacity = 1.0
 cursor-opacity = 1.0
 cursor-color = #e0e0e0
-cursor-text = #0e0e0e
+cursor-text = #0a0a0a
 font-family = Berkeley Mono
 font-size = 16
 window-padding-x = 0
@@ -21,4 +21,4 @@ keybind = alt+five=unbind
 keybind = alt+six=unbind
 keybind = alt+seven=unbind
 keybind = alt+eight=unbind
-theme = catppuccin-mocha
+theme = UltraDark

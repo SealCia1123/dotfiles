@@ -2,6 +2,9 @@ local space = " "
 local opt = vim.opt
 local set = vim.opt_local
 
+-- set file picker
+-- vim.g.lazyvim_picker = "telescope"
+
 vim.api.nvim_create_autocmd("TermOpen", {
   group = vim.api.nvim_create_augroup("custom-term-open", {}),
   callback = function()
@@ -19,7 +22,7 @@ opt.listchars:append({
   tab = "  ",
 })
 opt.showtabline = 0
--- opt.statuscolumn = ""
+opt.statuscolumn = ""
 opt.shortmess = "ltToOCF"
 opt.cursorline = false
 opt.inccommand = "split"

@@ -9,14 +9,16 @@ return {
     },
     config = function()
       require("telescope").setup({
+        pickers = {
+          find_files = {
+            find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
+          },
+        },
         extensions = {
           fzf = {},
         },
       })
       require("telescope").load_extension("fzf")
-      -- <leader>dn to jump to next diagnostics
-      local set = vim.keymap.set
-      set("n", "<leader>dn", require("telescope.builtin").diagnostics)
     end,
   },
 }
