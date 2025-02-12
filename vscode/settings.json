@@ -1,6 +1,6 @@
 {
-    "editor.fontSize": 24,
-    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 22,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
     "git.openRepositoryInParentFolders": "never",
     "editor.cursorBlinking": "solid",
     "keyboard.dispatch": "keyCode",
@@ -13,14 +13,11 @@
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/workspace/.vimrc",
     "vim.handleKeys": {
-        "<C-p>": false,
+        "<C-p>": true,
         "<C-s>": false,
         "<C-z>": false,
-        "<C-w>": false,
-        "<C-f>": false
-    },
-    "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#00ffd9"
+        "<C-w>": true,
+        "<C-n>": true,
     },
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
@@ -30,20 +27,17 @@
         { "before": ["<S-h>"], "commands": [":bprevious"] },
         { "before": ["<S-l>"], "commands": [":bnext"] },
 
-        // splits
-        { "before": ["leader", "v"], "commands": [":vsplit"] },
-        { "before": ["leader", "s"], "commands": [":split"] },
         // panes
         {
             "before": ["<C-h>"],
             "commands": ["workbench.action.focusLeftGroup"]
         },
         {
-            "before": ["leader", "j"],
+            "before": ["<C-j>"],
             "commands": ["workbench.action.focusBelowGroup"]
         },
         {
-            "before": ["leader", "k"],
+            "before": ["<C-k>"],
             "commands": ["workbench.action.focusAboveGroup"]
         },
         {
@@ -54,14 +48,6 @@
             "before": ["<leader>", "c", "a"],
             "commands": ["editor.action.quickFix"]
         },
-        {
-            "before": ["leader", "f"],
-            "commands": ["workbench.action.quickOpen"]
-        },
-        {
-            "before": ["leader", "c", "f"],
-            "commands": ["editor.action.formatDocument"]
-        }
     ],
     "vim.visualModeKeyBindings": [
         // Stay in visual mode while indenting
@@ -73,14 +59,8 @@
         // toggle comment selection
         { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
     ],
-    "git.confirmSync": false,
-    "notebook.defaultFormatter": "HookyQR.beautify",
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
     "editor.formatOnSave": true,
     "vim.useCtrlKeys": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.minimap.enabled": false,
     "editor.fontLigatures": true,
     "breadcrumbs.enabled": false
