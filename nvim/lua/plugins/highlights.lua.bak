@@ -82,7 +82,7 @@ hl.common = {
   MiniStatuslineModeVisual = { fg = c.fg, bg = "#1c1f20" },
   StatusLineTerm = { fg = c.fg, bg = c.bg },
   StatusLineNC = { fg = c.comment, bg = c.bg },
-  StatusLineTermNC = { fg = c.comment, bg = c.line },
+  StatusLineTermNC = { fg = c.comment, bg = c.bg },
   Substitute = { fg = c.type, bg = c.visual },
   TabLine = { fg = c.fg, bg = c.line },
   TabLineFill = { fg = c.comment, bg = c.line },
