@@ -30,11 +30,9 @@ set("n", "<M-s>", "<C-W>-")
 -- for terminal mode
 vim.api.nvim_set_keymap("t", "<esc>", "<C-\\><C-n>", { noremap = true })
 set("n", "<leader>n", ":vertical terminal<cr>", opts)
+
 set("n", "Y", "y$")
 set("n", "dbw", "vbd")
 set("n", "O", "O<esc>", opts)
 set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 set("v", "<leader>p", "_dP'")
-
--- Reload config
--- vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")

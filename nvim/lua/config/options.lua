@@ -2,21 +2,21 @@ local space = " "
 local opt = vim.opt
 local set = vim.opt_local
 vim.api.nvim_create_autocmd("TermOpen", {
-    group = vim.api.nvim_create_augroup("custom-term-open", {}),
-    callback = function()
-        set.number = false
-        set.relativenumber = false
-        set.scrolloff = 0
-        vim.bo.filetype = "terminal"
-    end,
+  group = vim.api.nvim_create_augroup("custom-term-open", {}),
+  callback = function()
+    set.number = false
+    set.relativenumber = false
+    set.scrolloff = 0
+    vim.bo.filetype = "terminal"
+  end,
 })
 
 opt.listchars:append({
-    multispace = space,
-    lead = space,
-    trail = space,
-    nbsp = space,
-    tab = "  ",
+  multispace = space,
+  lead = space,
+  trail = space,
+  nbsp = space,
+  tab = "  ",
 })
 opt.cmdheight = 1
 opt.showtabline = 0
@@ -46,5 +46,15 @@ vim.opt.relativenumber = true
 
 -- disable inline error
 vim.diagnostic.config({
-    virtual_text = false,
+  virtual_text = false,
 })
+-- markdown text width
+vim.api.nvim_create_autocmd("BufWinEnter", {
+  pattern = { "*.md" },
+  callback = function()
+    vim.opt.textwidth = 80
+  end,
+})
+
+-- Disable blink cursor
+opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:ver25-blinkon0-blinkoff0-TermCursor"
