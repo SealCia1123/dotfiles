@@ -82,7 +82,7 @@ hl.common = {
   MiniStatuslineModeVisual = { fg = c.fg, bg = "#1c1f20" },
   StatusLineTerm = { fg = c.fg, bg = c.bg },
   StatusLineNC = { fg = c.comment, bg = c.bg },
-  StatusLineTermNC = { fg = c.comment, bg = c.line },
+  StatusLineTermNC = { fg = c.comment, bg = c.bg },
   Substitute = { fg = c.type, bg = c.visual },
   TabLine = { fg = c.fg, bg = c.line },
   TabLineFill = { fg = c.comment, bg = c.line },
@@ -366,8 +366,12 @@ M.set_highlights = function()
   set_vim_highlights(hl.common)
   set_vim_highlights(hl.syntax)
 
-  if hl.treesitter then set_vim_highlights(hl.treesitter) end
-  if hl.lsp then set_vim_highlights(hl.lsp) end
+  if hl.treesitter then
+    set_vim_highlights(hl.treesitter)
+  end
+  if hl.lsp then
+    set_vim_highlights(hl.lsp)
+  end
 
   for _, group in pairs(hl.plugins) do
     set_vim_highlights(group)
