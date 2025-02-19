@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end,
 })
 
-opt.listchars:append({
+vim.opt.listchars:append({
   multispace = space,
   lead = space,
   trail = space,
