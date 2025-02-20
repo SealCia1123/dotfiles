@@ -69,8 +69,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git zsh-autosuggestions)
-plugins=(git)
+plugins=(git zsh-autosuggestions)
+# plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -132,11 +132,13 @@ alias shutdown='sudo shutdown now'
 # alias reboot='sudo /sbin/shutdown -r now'
 # alias shutdown='sudo /sbin/shutdown -a now'
 alias dl='aria2c -x 16 -s 16' # Quick download command using aria2
+alias sde='sudoedit'
 
 # Hypr shortcuts
 alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox
 alias hylogout='hyprctl dispatch exit'
 alias lock='hyprlock'
+alias turnofflaptopscreen='hyprctl keyword monitor "eDP-1, disable"'
 
 # TMUX shortcuts
 alias t="tmux new -s home"
@@ -146,8 +148,8 @@ alias tl='tmux ls'
 alias df='df -h'
 
 # Boot to windows/fedora
-alias winboot='sudo efibootmgr --bootnext 0002; sudo reboot'
-alias fedoraboot='sudo efibootmgr --bootnext 0005; sudo reboot'
+alias winboot='sudo efibootmgr --bootnext 0003; sudo reboot'
+alias fedoraboot='sudo efibootmgr --bootnext 0001; sudo reboot'
 source <(fzf --zsh)
 
 # Enable vim mode in terminal
@@ -158,7 +160,7 @@ source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
-export TERMINAL="/usr/bin/kitty"
+export TERMINAL="/usr/bin/ghostty"
 export BROWSER="/usr/bin/thorium-browser"
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 # export XMODIFIERS=@im=fcitx
