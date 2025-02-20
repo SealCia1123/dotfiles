@@ -9,7 +9,6 @@ return {
   },
   dependencies = {
     "rafamadriz/friendly-snippets",
-    "kristijanhusak/vim-dadbod-completion",
     -- add blink.compat to dependencies
     {
       "saghen/blink.compat",
@@ -35,7 +34,7 @@ return {
       use_nvim_cmp_as_default = true,
       -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
       -- adjusts spacing to ensure icons are aligned
-      nerd_font_variant = "mono",
+      nerd_font_variant = "normal",
     },
     completion = {
       accept = {
@@ -65,19 +64,18 @@ return {
       -- adding any nvim-cmp sources here will enable them
       -- with blink.compat
       compat = {},
-      default = { "lsp", "dadbod", "path", "snippets", "buffer" },
-      providers = {
-        dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
-      },
-      cmdline = {},
+      default = { "lsp", "path", "snippets", "buffer" },
+    },
+
+    cmdline = {
+      enabled = true,
     },
 
     keymap = {
-      preset = "none",
+      preset = "enter",
       ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
       ["<C-e>"] = { "hide" },
       ["<C-y>"] = { "select_and_accept" },
-
       ["<Up>"] = { "select_prev", "fallback" },
       ["<Down>"] = { "select_next", "fallback" },
       ["<C-p>"] = { "select_prev", "fallback" },
@@ -86,6 +84,8 @@ return {
       ["<C-j>"] = { "scroll_documentation_down", "fallback" },
       ["<C-f>"] = { "snippet_forward", "fallback" },
       ["<C-b>"] = { "snippet_backward", "fallback" },
+      ["<Tab>"] = {},
+      ["<S-Tab>"] = {},
     },
   },
   ---@param opts blink.cmp.Config | { sources: { compat: string[] } }
@@ -100,22 +100,6 @@ return {
       )
       if type(enabled) == "table" and not vim.tbl_contains(enabled, source) then
         table.insert(enabled, source)
-      end
-    end
-
-    -- add ai_accept to <Tab> key
-    if not opts.keymap["<Tab>"] then
-      if opts.keymap.preset == "super-tab" then -- super-tab
-        opts.keymap["<Tab>"] = {
-          require("blink.cmp.keymap.presets")["super-tab"]["<Tab>"][1],
-          LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
-          "fallback",
-        }
-      else -- other presets
-        opts.keymap["<Tab>"] = {
-          LazyVim.cmp.map({ "snippet_forward", "ai_accept" }),
-          "fallback",
-        }
       end
     end
 
