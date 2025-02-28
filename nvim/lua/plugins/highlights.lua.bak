@@ -73,6 +73,7 @@ hl.common = {
   SpellLocal = { fg = c.none, gui = "undercurl" },
   SpellRare = { fg = c.none, gui = "undercurl" },
   TermCursorNC = { fg = c.base, bg = "#7c7f93" },
+  -- START
   StatusLine = { fg = c.fg, bg = c.bg },
   MiniStatuslineModeCommand = { fg = c.fg, bg = "#1c1f20" },
   MiniStatuslineModeInsert = { fg = c.fg, bg = "#1c1f20" },
@@ -83,11 +84,12 @@ hl.common = {
   StatusLineTerm = { fg = c.fg, bg = c.bg },
   StatusLineNC = { fg = c.comment, bg = c.bg },
   StatusLineTermNC = { fg = c.comment, bg = c.bg },
+  Terminal = { fg = c.fg, bg = conf.transparent and "none" or c.bg },
+  -- END
   Substitute = { fg = c.type, bg = c.visual },
   TabLine = { fg = c.fg, bg = c.line },
   TabLineFill = { fg = c.comment, bg = c.line },
   TabLineSel = { fg = c.bg, bg = c.fg },
-  Terminal = { fg = c.fg, bg = config.transparent and c.none or c.bg },
   ToolbarButton = { fg = c.bg, bg = c.visual },
   ToolbarLine = { fg = c.fg },
   Visual = { fg = c.fg, bg = c.visual },
