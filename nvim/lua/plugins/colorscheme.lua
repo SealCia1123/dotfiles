@@ -55,7 +55,7 @@ return {
           -- search = "#465362",
           -- plus = "#8faf77",
           -- delta = "#e6be8c",
-          bg = "#0a0a0a",
+          bg = "#050505",
           fg = "#cdcdcd",
           floatBorder = "#878787",
           line = "#252530",

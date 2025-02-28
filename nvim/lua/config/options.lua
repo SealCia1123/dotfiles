@@ -18,6 +18,7 @@ vim.opt.listchars:append({
   nbsp = space,
   tab = "  ",
 })
+
 -- opt.cmdheight = 1
 opt.showtabline = 0
 opt.statuscolumn = ""
@@ -59,3 +60,31 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 -- Disable blink cursor
 opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:ver25-blinkon0-blinkoff0-TermCursor"
 opt.pumblend = 0
+
+-- highlight things
+local fg = "#cdcdcd"
+local bg = "#1c1f20"
+local background = "#050505"
+local comment = "#606079"
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = function()
+    vim.api.nvim_set_hl(0, "LspReferenceRead", {})
+    vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
+    vim.api.nvim_set_hl(0, "LspReferenceText", {})
+    vim.api.nvim_set_hl(0, "StatusLine", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeOther", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeReplace", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeVisual", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "StatusLineTerm", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "StatusLineNC", { fg = comment, bg = background })
+    vim.api.nvim_set_hl(0, "StatusLineTermNC", { fg = comment, bg = background })
+    vim.api.nvim_set_hl(0, "Terminal", { fg = fg, bg = bg or "none" })
+  end,
+})
+
+-- set 80 characters column
+opt.colorcolumn = "80"
