@@ -187,6 +187,7 @@ return {
         { name = "nvim_lsp_signature_help" },
         { name = "luasnip" },
         { name = "path" },
+        { name = "buffer" },
         { name = "git" },
         -- { name = "cmdline" },
         { name = "calc" },
@@ -266,9 +267,10 @@ return {
       window = {
         completion = cmp.config.window.bordered({
           side_padding = 0,
+          border = "none",
         }),
-
         documentation = {
+          border = "none",
           max_width = 50,
           max_height = 60,
         },

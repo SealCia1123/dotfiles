@@ -5,6 +5,7 @@ return {
       java = { "google-java-format" },
       -- md = { "prettier" },
       xml = { "lemminx" },
+      html = { "prettier" },
     },
     -- formatters = {
     --   ["google-java-format"] = {

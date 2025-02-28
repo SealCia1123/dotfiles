@@ -58,3 +58,4 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 
 -- Disable blink cursor
 opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:ver25-blinkon0-blinkoff0-TermCursor"
+opt.pumblend = 0

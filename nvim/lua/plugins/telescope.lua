@@ -9,12 +9,12 @@ return {
     },
     config = function()
       require("telescope").setup({
-        defaults = {
-          layout_config = {
-            width = 0.9,
-            preview_width = 0.5,
-          },
-        },
+        -- defaults = {
+        --   layout_config = {
+        --     width = 0.85,
+        --     preview_width = 0.5,
+        --   },
+        -- },
         pickers = {
           find_files = {
             hidden = true,
