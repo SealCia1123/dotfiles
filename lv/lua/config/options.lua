@@ -53,3 +53,16 @@ vim.diagnostic.config({
 
 -- Disable blink cursor
 opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:ver25-blinkon0-blinkoff0-TermCursor"
+
+-- highlight things
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = function()
+    vim.api.nvim_set_hl(0, "LspReferenceRead", {})
+    vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
+    vim.api.nvim_set_hl(0, "LspReferenceText", {})
+  end,
+})
+
+-- set 80 characters column
+opt.colorcolumn = "80"
