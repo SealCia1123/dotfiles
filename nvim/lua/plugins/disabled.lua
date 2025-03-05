@@ -16,4 +16,5 @@ return {
   -- { "folke/which-key.nvim", enabled = false },
   -- { "iamcco/markdown-preview.nvim", enabled = false },
   { "MeanderingProgrammer/render-markdown.nvim", enabled = false },
+  -- { "tjdevries/express_line.nvim", enabled = false },
 }

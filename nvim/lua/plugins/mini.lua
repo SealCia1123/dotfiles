@@ -10,7 +10,7 @@ return {
         active = nil,
         inactive = nil,
       },
-      use_icons = true,
+      use_icons = false,
       set_vim_settings = true,
     })
     statusline.section_location = function()

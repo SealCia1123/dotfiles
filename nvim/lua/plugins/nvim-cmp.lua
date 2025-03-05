@@ -278,8 +278,8 @@ return {
       mapping = cmp.mapping.preset.insert({
         ["<C-f>"] = cmp_action.luasnip_jump_forward(),
         ["<C-b>"] = cmp_action.luasnip_jump_backward(),
-        ["<C-k>"] = cmp.mapping.scroll_docs(-1),
-        ["<C-j>"] = cmp.mapping.scroll_docs(1),
+        ["<C-k>"] = cmp.mapping.scroll_docs(-3),
+        ["<C-j>"] = cmp.mapping.scroll_docs(3),
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-y>"] = cmp.mapping.confirm({ select = true }),
         --["<CR>"] = cmp.mapping.confirm({ select = true }),
