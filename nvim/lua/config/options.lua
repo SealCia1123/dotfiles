@@ -32,6 +32,7 @@ opt.splitright = true
 opt.signcolumn = "yes"
 opt.shada = { "'10", "<0", "s10", "h" }
 opt.clipboard = "unnamedplus"
+
 -- encode to utf-8
 vim.scriptencoding = "utf-8"
 opt.encoding = "utf-8"
@@ -59,6 +60,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 
 -- Disable blink cursor
 opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:ver25-blinkon0-blinkoff0-TermCursor"
+-- Completion window transparency
 opt.pumblend = 0
 
 -- highlight things
@@ -73,16 +75,44 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
     vim.api.nvim_set_hl(0, "LspReferenceText", {})
     vim.api.nvim_set_hl(0, "StatusLine", { fg = fg, bg = background })
-    vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", { fg = fg, bg = bg })
-    vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", { fg = fg, bg = bg })
-    vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = fg, bg = bg })
-    vim.api.nvim_set_hl(0, "MiniStatuslineModeOther", { fg = fg, bg = bg })
-    vim.api.nvim_set_hl(0, "MiniStatuslineModeReplace", { fg = fg, bg = bg })
-    vim.api.nvim_set_hl(0, "MiniStatuslineModeVisual", { fg = fg, bg = bg })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeOther", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeReplace", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "MiniStatuslineModeVisual", { fg = fg, bg = background })
     vim.api.nvim_set_hl(0, "StatusLineTerm", { fg = fg, bg = background })
     vim.api.nvim_set_hl(0, "StatusLineNC", { fg = comment, bg = background })
     vim.api.nvim_set_hl(0, "StatusLineTermNC", { fg = comment, bg = background })
     vim.api.nvim_set_hl(0, "Terminal", { fg = fg, bg = bg or "none" })
+    vim.api.nvim_set_hl(0, "ElInsert", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElCommand", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElCommandCV", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElCommandEx", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElConfirm", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElInsertCompletion", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElMore", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElNormal", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElNormalOperatorPending", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElPrompt", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElReplace", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElSBlock", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElSelect", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElShell", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElSLine", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElTerm", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElVirtualReplace", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElVisualBlock", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElVisualLine", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElVisual", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElCommandInactive", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElCommandCVInactive", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElCommandExInactive", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElConfirmInactive", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElInsertCompletionInactive", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElInsertInactive", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElMoreInactive", { fg = fg, bg = background })
+    vim.api.nvim_set_hl(0, "ElNormalInactive", { fg = fg, bg = background })
   end,
 })
 
