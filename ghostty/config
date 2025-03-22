@@ -22,3 +22,4 @@ keybind = alt+six=unbind
 keybind = alt+seven=unbind
 keybind = alt+eight=unbind
 theme = UltraDark
+adjust-cell-height = 4%
