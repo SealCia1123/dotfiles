@@ -108,7 +108,7 @@ local config = {
     "-XX:GCTimeRatio=4",
     "-XX:AdaptiveSizePolicyWeight=90",
     "-Dsun.zip.disableMemoryMapping=true",
-    "-Xmx2g",
+    "-Xmx4g",
     "-Xms100m",
     "-Declipse.application=org.eclipse.jdt.ls.core.id1",
     "-Dosgi.bundles.defaultStartLevel=4",
