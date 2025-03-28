@@ -99,9 +99,10 @@ floating_modifier Mod4
 bindsym Mod4+q exec ghostty
 bindsym Print exec flameshot gui
 # bindsym Mod4+space exec --no-startup-id gapplication launch io.ulauncher.Ulauncher
-bindsym Mod4+space exec --no-startup-id rofi -show drun
+# bindsym Mod4+space exec --no-startup-id rofi -show drun
 # bindsym Ctrl+f exec ~/.local/script/tmux-sessionizer
-bindsym Mod1+space exec --no-startup-id dmenu_run -fn 'DejaVu Sans Mono-13'
+bindsym Mod4+space exec --no-startup-id dmenu_run -fn 'DejaVu Sans Mono-13'
+bindsym Mod1+space exec --no-startup-id tofi-drun --drun-launch=true
 # bindsym Mod1+space exec --no-startup-id /home/sealcia/.local/bin/dmenu_run_history -fn 'DejaVu Sans Mono-13'
 # bindsym Mod4+space exec --no-startup-id /home/sealcia/.config/rofi/launchers/type-1/launcher.sh
 # bindsym Mod4+space exec ulauncher-toggle
@@ -282,3 +283,4 @@ input "type:keyboard" {
 
 input * repeat_delay 300
 input * repeat_rate 50
+title_align center
