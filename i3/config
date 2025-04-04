@@ -56,12 +56,11 @@ font pango:DejaVu Sans Mono 9
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id /usr/lib/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Monitor Setup
-exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 144 --above eDP-1 --auto
-exec --no-startup-id xrandr
+exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 0x1400 --rotate normal --output HDMI-1 --primary --mode 1920x1080 --rate 144 --pos 0x0 --rotate normal
 # exec --no-startup-id xautocfg
-exec xset r rate 300 50
+# exec xset r rate 300 50
 exec --no-startup-id xsettingsd
 exec --no-startup-id xinput set-prop 12 "libinput Scrolling Pixel Distance" 50
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -70,10 +69,9 @@ exec --no-startup-id xinput set-prop 12 "libinput Scrolling Pixel Distance" 50
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id nitrogen --restore
+# exec --no-startup-id nitrogen --restore
 exec --no-startup-id i3status-title-on-bar
-# exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
-exec --no-startup-id picom
+exec --no-startup-id feh --bg-center ~/.config/wallpaper/classic-painting/close_up_of_god_and_adam.jpg
 exec --no-startup-id ibus-daemon -rxRd
 exec --no-startup-id xclip
 exec --no-startup-id diodon
@@ -101,9 +99,9 @@ tiling_drag modifier titlebar
 bindsym Mod4+q exec ghostty
 bindsym Print exec flameshot gui
 # bindsym Mod4+space exec --no-startup-id gapplication launch io.ulauncher.Ulauncher
-bindsym Mod4+space exec --no-startup-id rofi -show drun
 # bindsym Ctrl+f exec ~/.local/script/tmux-sessionizer
 bindsym Mod1+space exec --no-startup-id dmenu_run -fn 'DejaVu Sans Mono-13'
+bindsym Mod4+space exec --no-startup-id rofi -show drun
 # bindsym Mod1+space exec --no-startup-id /home/sealcia/.local/bin/dmenu_run_history -fn 'DejaVu Sans Mono-13'
 # bindsym Mod4+space exec --no-startup-id /home/sealcia/.config/rofi/launchers/type-1/launcher.sh
 # bindsym Mod4+space exec ulauncher-toggle
@@ -121,7 +119,7 @@ gaps outer 0
 # default_floating_border pixel 1
 
 # Remove top bar of each workspace
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 
 # kill focused window
@@ -260,7 +258,10 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym Mod4+r mode "default"
 }
-
+# bindsym Mod4+Mod1+h resize shrink width 5 px or 5 ppt
+# bindsym Mod4+Mod1+j resize grow height 5 px or 5 ppt
+# bindsym Mod4+Mod1+k resize shrink height 5 px or 5 ppt
+# bindsym Mod4+Mod1+l resize grow width 5 px or 5 ppt
 bindsym Mod4+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
