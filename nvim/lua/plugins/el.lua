@@ -6,6 +6,10 @@ return {
 
       -- Statusline options can be of several different types.
       -- Option 1, just a string.
+      local file_namer = function(_window, buffer)
+        return buffer.name
+      end
+      table.insert(el_segments, file_namer)
 
       table.insert(el_segments, "[literal_string]")
 
@@ -18,20 +22,11 @@ return {
       local builtin = require("el.builtin")
       table.insert(el_segments, builtin.file)
 
-      -- Option 2, just a function that returns a string.
-      local extensions = require("el.extensions")
-      table.insert(el_segments, extensions.mode) -- mode returns the current mode.
-
       -- Option 3, returns a function that takes in a Window and a Buffer.
       --  See |:help el.Window| and |:help el.Buffer|
       --
       --  With this option, you don't have to worry about escaping / calling
       --  the function in the correct way to get the current buffer and window.
-      local file_namer = function(_window, buffer)
-        return buffer.name
-      end
-      table.insert(el_segments, file_namer)
-
       -- Option 4, you can return a coroutine.
       --  In lua, you can cooperatively multi-thread.
       --  You can use `coroutine.yield()` to yield execution to another coroutine.

@@ -2,3 +2,4 @@
 require("config.lazy")
 vim.cmd.colorscheme("roseprime")
 require("lspconfig").jdtls.setup({})
+require("mini.statusline").setup({})

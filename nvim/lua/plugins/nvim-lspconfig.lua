@@ -71,7 +71,7 @@ return {
       -- Be aware that you also will need to properly configure your LSP server to
       -- provide the inlay hints.
       inlay_hints = {
-        enabled = false,
+        enabled = true,
         exclude = { "vue" }, -- filetypes for which you don't want to enable inlay hints
       },
       -- Enable this to enable the builtin LSP code lenses on Neovim >= 0.10.0
@@ -192,7 +192,8 @@ return {
             and vim.bo[buffer].buftype == ""
             and not vim.tbl_contains(opts.inlay_hints.exclude, vim.bo[buffer].filetype)
           then
-            LazyVim.toggle.inlay_hints(buffer, true)
+            -- LazyVim.toggle.inlay_hints(buffer, true)
+            vim.lsp.inlay_hint.enable(true, { bufnr = buffer })
           end
         end)
       end
