@@ -17,7 +17,7 @@
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 9
+font pango:DejaVu Sans Mono 8
 # Color
 # set $rosewater #f5e0dc
 # set $flamingo  #f2cdcd
@@ -46,8 +46,8 @@ font pango:DejaVu Sans Mono 9
 # set $mantle    #181825
 # set $crust     #11111b
 
-# target                 title     bg    text      indicator    border
-# client.focused           $crust   #272727 #ffffff  #737373 #272727
+# target                   title     bg       text     indicator border
+# client.focused           $crust    #272727  #ffffff  #272727  #272727
 # client.focused_inactive  $overlay0 $base  $text    $rosewater $overlay0
 # client.unfocused         $overlay0 $base  $text    $rosewater $overlay0
 # client.urgent            $peach    $base  $peach   $overlay0  $peach
@@ -60,7 +60,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Monitor Setup
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 0x1400 --rotate normal --output HDMI-1 --primary --mode 1920x1080 --rate 144 --pos 0x0 --rotate normal
 # exec --no-startup-id xautocfg
-# exec xset r rate 300 50
+exec xset r rate 300 50
 exec --no-startup-id xsettingsd
 exec --no-startup-id xinput set-prop 12 "libinput Scrolling Pixel Distance" 50
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -73,9 +73,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id i3status-title-on-bar
 exec --no-startup-id feh --bg-center ~/.config/wallpaper/classic-painting/close_up_of_god_and_adam.jpg
 exec --no-startup-id ibus-daemon -rxRd
-exec --no-startup-id xclip
+# exec --no-startup-id copyq
+exec --no-startup-id xsel
+exec --no-startup-id dunst
 exec --no-startup-id diodon
-# exec --no-startup-id albert
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -100,7 +101,7 @@ bindsym Mod4+q exec ghostty
 bindsym Print exec flameshot gui
 # bindsym Mod4+space exec --no-startup-id gapplication launch io.ulauncher.Ulauncher
 # bindsym Ctrl+f exec ~/.local/script/tmux-sessionizer
-bindsym Mod1+space exec --no-startup-id dmenu_run -fn 'DejaVu Sans Mono-13'
+bindsym Mod1+space exec --no-startup-id dmenu_run -fn 'DejaVu Sans Mono-12'
 bindsym Mod4+space exec --no-startup-id rofi -show drun
 # bindsym Mod1+space exec --no-startup-id /home/sealcia/.local/bin/dmenu_run_history -fn 'DejaVu Sans Mono-13'
 # bindsym Mod4+space exec --no-startup-id /home/sealcia/.config/rofi/launchers/type-1/launcher.sh
@@ -271,4 +272,8 @@ bar {
   tray_output HDMI-1
   status_command i3status
 }
-title_align center
+# title_align center
+
+# Title bar icon
+for_window [all] title_window_icon on
+for_window [all] title_window_icon padding 6px
