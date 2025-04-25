@@ -7,6 +7,7 @@ return {
       "nvim-telescope/telescope-frecency.nvim",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     },
+
     config = function()
       require("telescope").setup({
         -- defaults = {
@@ -15,6 +16,8 @@ return {
         --     preview_width = 0.5,
         --   },
         -- },
+        --
+        --
         pickers = {
           find_files = {
             hidden = true,

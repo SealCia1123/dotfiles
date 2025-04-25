@@ -10,9 +10,7 @@ return {
         return buffer.name
       end
       table.insert(el_segments, file_namer)
-
       table.insert(el_segments, "[literal_string]")
-
       -- Keep in mind, these can be the builtin strings,
       -- which are found in |:help statusline|
       table.insert(el_segments, "%f")

@@ -1,16 +1,6 @@
 {
-    "name": "snippets",
-    "contributes": {
-        "snippets": [
-            {
-                "language": ["java"],
-                "path": "snippets/java.json"
-                "souf": {
-                    "prefix": "souf",
-                    "body": ["System.out.printf($0);"],
-                    "description": "Print format to standard out"
-                },
-            }
-        ]
-    }
+  "souf": {
+    "prefix": "souf",
+    "body": ["System.out.printf();"]
+  }
 }
