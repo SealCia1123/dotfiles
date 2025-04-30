@@ -1,5 +1,4 @@
-background = #050505
-minimum-contrast = 1
+background = #0e0e0e
 cursor-style = block
 shell-integration-features = no-cursor
 cursor-style-blink = false
@@ -8,11 +7,11 @@ cursor-opacity = 1.0
 cursor-color = #e0e0e0
 cursor-text = #0a0a0a
 font-family = Berkeley Mono
-font-size = 16
+font-family = "JetBrainsMono Nerd Font"
+font-size = 17
 window-padding-x = 0
 window-padding-y = 0
 font-style-italic = false
-window-decoration = false
 keybind = alt+one=unbind
 keybind = alt+two=unbind
 keybind = alt+three=unbind
@@ -21,5 +20,8 @@ keybind = alt+five=unbind
 keybind = alt+six=unbind
 keybind = alt+seven=unbind
 keybind = alt+eight=unbind
+keybind = alt+nine=unbind
 theme = UltraDark
-adjust-cell-height = 4%
+adjust-cell-height = 0%
+adjust-cell-width = -4%
+window-decoration = none
