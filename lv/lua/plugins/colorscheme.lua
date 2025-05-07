@@ -4,7 +4,7 @@ return {
     name = "catppuccin",
     priority = 1000,
     require("catppuccin").setup({
-      flavour = "auto", -- latte, frappe, macchiato, mocha
+      flavour = "mocha", -- latte, frappe, macchiato, mocha
       background = { -- :h background
         light = "latte",
         dark = "mocha",
@@ -48,15 +48,18 @@ return {
           enabled = true,
           indentscope_color = "",
         },
-        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
       },
     }),
   },
   {
-    -- iceclimber
-    -- coffeecat
-    -- darkforest
-    -- roseprime
     "cdmill/neomodern.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("neomodern").setup({
+        -- optional configuration here
+      })
+      require("neomodern").load()
+    end,
   },
 }

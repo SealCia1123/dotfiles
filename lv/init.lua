@@ -1,5 +1,6 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 vim.cmd.colorscheme("roseprime")
 require("lspconfig").jdtls.setup({})
-require("mini.statusline").setup({})
+-- require("mini.statusline").setup({})
+require("el").setup({})
+vim.lsp.enable({ "lua_ls", "jdtls", "ts_ls" })
