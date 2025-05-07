@@ -86,7 +86,7 @@ return {
             enabled = true,
         },
         picker = {
-            exclude = { "*.class", "*.jar" }, -- exclude class, jar files
+            exclude = { "*.class", "*.jar", "target*", "*.out" }, -- exclude files
             enabled = true,
             prompt = "> ",
             sources = {},

@@ -72,7 +72,7 @@ return {
         sources = {
             -- `lsp`, `buffer`, `snippets`, `path` and `omni` are built-in
             -- so you don't need to define them in `sources.providers`
-            default = { "lsp", "buffer", "snippets", "path", "omni" },
+            default = { "snippets", "lsp", "buffer", "path", "omni" },
             providers = {},
         },
 
