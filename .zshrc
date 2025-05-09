@@ -107,26 +107,26 @@ eval "$(starship init zsh)"
 alias ..='z ..'
 alias ...='z ../..'
 alias ....='z ../../..'
-alias update='sudo pacman -Syu;yay'
+alias update='sudo pacman -Syu;paru -Syu --noconfirm'
 alias install='sudo pacman -S'
 alias remove='sudo pacman -Rns'
 alias search='pacman -Ss'
-alias ainstall='yay -S'
-alias asearch='yay -Ss'
-alias aremove='yay -Rns'
+alias ainstall='paru -S --noconfirm'
+alias asearch='paru -Ss'
+alias aremove='paru -Rns'
 alias yy='yazi'
-alias suspend='sudo systemctl suspend'
+alias suspend='i3lock -c 111111;systemctl suspend'
 # alias cp='cp -vair'
-alias vi='nvim'
+alias vim='nvim'
 alias lv='NVIM_APPNAME=lv nvim'
 # alias ll='eza -ll'
 # alias la='eza -la'
 # alias ls='eza'
 alias lg='lazygit'
-alias ls='lsd'
-alias l='lsd -l'
-alias ll='lsd -l'
-alias la='lsd -la'
+# alias ls='lsd'
+# alias l='lsd -l'
+# alias ll='lsd -l'
+# alias la='lsd -la'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
 # alias reboot='sudo /sbin/shutdown -r now'
@@ -139,6 +139,7 @@ alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox
 alias hylogout='hyprctl dispatch exit'
 alias lock='hyprlock'
 alias turnofflaptopscreen='hyprctl keyword monitor "eDP-1, disable"'
+alias i3turnofflaptopscreen='xrandr --output eDP-1 --off'
 
 # TMUX shortcuts
 alias t="tmux new -s home"
@@ -156,12 +157,13 @@ source <(fzf --zsh)
 # set -o vi
 
 # source zsh syntax highlighting
-source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
 export TERMINAL="/usr/bin/ghostty"
 export BROWSER="/usr/bin/thorium-browser"
+export FIREFOX="/usr/bin/librewolf"
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 # export XMODIFIERS=@im=fcitx
 # export QT_IM_MODULE=fcitx
@@ -179,3 +181,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 HISTSIZE=5000
 HISTFILESIZE=10000
 export MANPAGER='nvim +Man!'
+
+export PATH=$PATH:/home/sealcia/.local/bin
