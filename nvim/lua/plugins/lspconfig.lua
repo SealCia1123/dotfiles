@@ -215,13 +215,7 @@ return {
         local lspconfig = require("lspconfig")
         lspconfig.lua_ls.setup({})
 
-        local ensure_installed = {
-            "lua_ls",
-            "clangd",
-            "gopls",
-            "ts_ls",
-            "pyright",
-        } ---@type string[]
+        local ensure_installed = {} ---@type string[]
 
         for server, server_opts in pairs(servers) do
             if server_opts then

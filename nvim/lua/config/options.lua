@@ -38,7 +38,7 @@ vim.scriptencoding = "utf-8"
 opt.encoding = "utf-8"
 vim.o.encoding = "utf-8"
 
--- set tabsize to 2 spaces
+-- set tabsize to 4 spaces
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
@@ -113,6 +113,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         vim.api.nvim_set_hl(0, "ElInsertInactive", { fg = fg, bg = "none" })
         vim.api.nvim_set_hl(0, "ElMoreInactive", { fg = fg, bg = "none" })
         vim.api.nvim_set_hl(0, "ElNormalInactive", { fg = fg, bg = "none" })
+        vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = "#606079" })
+        vim.api.nvim_set_hl(0, "SnacksIndent", { fg = "#393B42" })
     end,
 })
 

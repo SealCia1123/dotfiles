@@ -1,5 +1,5 @@
 require("config.lazy")
-vim.cmd.colorscheme("vague")
+vim.cmd.colorscheme("kanso")
 require("oil").setup()
 require("harpoon")
 require("el").setup({})

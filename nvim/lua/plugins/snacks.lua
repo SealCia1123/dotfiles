@@ -3,7 +3,7 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
-        indent = { enabled = false },
+        indent = { enabled = true },
         scroll = { enabled = false },
         input = { enabled = true },
         bigfile = { enabled = true },
