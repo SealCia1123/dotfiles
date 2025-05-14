@@ -14,4 +14,5 @@ return {
     { "hrsh7th/nvim-cmp", enabled = false },
     -- { "folke/tokyonight.nvim", enabled = false },
     -- { "saghen/blink.cmp", enabled = false },
+    { "rcarriga/nvim-notify", enabled = false },
 }

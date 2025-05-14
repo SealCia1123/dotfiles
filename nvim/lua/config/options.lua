@@ -46,10 +46,6 @@ vim.o.expandtab = true
 vim.o.termguicolors = true
 vim.opt.relativenumber = true
 
--- disable inline error
-vim.diagnostic.config({
-    virtual_text = false,
-})
 -- markdown text width
 vim.api.nvim_create_autocmd("BufWinEnter", {
     pattern = { "*.md" },
@@ -115,8 +111,10 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         vim.api.nvim_set_hl(0, "ElNormalInactive", { fg = fg, bg = "none" })
         vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = "#606079" })
         vim.api.nvim_set_hl(0, "SnacksIndent", { fg = "#393B42" })
+        vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#252530" })
     end,
 })
 
 -- set 80 characters column
 opt.colorcolumn = "80"
+opt.cmdheight = 0
