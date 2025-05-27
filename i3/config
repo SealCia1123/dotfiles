@@ -72,7 +72,7 @@ exec --no-startup-id xinput set-prop 12 "libinput Scrolling Pixel Distance" 50
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.local/scripts/x11-lock-suspend.sh
 # exec --no-startup-id xautolock -time 15 -locker "i3lock -c 333333;systemctl suspend"
 exec --no-startup-id i3status-title-on-bar
-# exec --no-startup-id nitrogen --restore &
+exec --no-startup-id nitrogen --restore &
 # exec --no-startup-id feh --bg-fill ~/.config/wallpaper/classic-painting/europeana-YIfFVwDcgu8-unsplash.jpg
 exec --no-startup-id ibus-daemon -rxRd
 # exec --no-startup-id copyq

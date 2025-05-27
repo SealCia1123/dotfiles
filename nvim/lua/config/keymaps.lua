@@ -2,7 +2,8 @@ local opts = { silent = true }
 local set = vim.keymap.set
 
 -- rename keymap
-set("n", "<leader>rn", ":IncRename ")
+vim.keymap.set("n", "<leader>rn", ":IncRename ")
+
 -- jump between buffers
 set("n", "<c-j>", "<c-w><c-j>")
 set("n", "<c-h>", "<c-w><c-h>")

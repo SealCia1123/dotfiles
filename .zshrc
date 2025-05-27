@@ -107,8 +107,8 @@ eval "$(starship init zsh)"
 alias ..='z ..'
 alias ...='z ../..'
 alias ....='z ../../..'
-alias update='sudo pacman -Syu;paru -Syu --noconfirm'
-alias install='sudo pacman -S'
+alias update='sudo pacman -Syu --noconfirm;paru -Syu --noconfirm'
+alias install='sudo pacman -S --noconfirm'
 alias remove='sudo pacman -Rns'
 alias search='pacman -Ss'
 alias ainstall='paru -S --noconfirm'
@@ -139,7 +139,7 @@ alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox
 alias hylogout='hyprctl dispatch exit'
 alias lock='hyprlock'
 alias turnofflaptopscreen='hyprctl keyword monitor "eDP-1, disable"'
-alias i3turnofflaptopscreen='xrandr --output eDP-1 --off'
+alias i3turn-off-eDP-1='xrandr --output eDP-1 --off;xrandr'
 
 # TMUX shortcuts
 alias t="tmux new -s home"
@@ -162,7 +162,7 @@ source <(fzf --zsh)
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
 export TERMINAL="/usr/bin/ghostty"
-export BROWSER="/usr/bin/thorium-browser"
+export BROWSER="/usr/bin/brave"
 export FIREFOX="/usr/bin/librewolf"
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 # export XMODIFIERS=@im=fcitx

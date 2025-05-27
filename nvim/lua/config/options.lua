@@ -19,7 +19,6 @@ vim.opt.listchars:append({
     tab = "  ",
 })
 
-opt.cmdheight = 1
 opt.showtabline = 0
 opt.statuscolumn = ""
 opt.shortmess = "ltToOCF"
@@ -45,14 +44,6 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = true
 vim.o.termguicolors = true
 vim.opt.relativenumber = true
-
--- markdown text width
-vim.api.nvim_create_autocmd("BufWinEnter", {
-    pattern = { "*.md" },
-    callback = function()
-        vim.opt.textwidth = 80
-    end,
-})
 
 -- Disable blink cursor
 opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:ver25-blinkon0-blinkoff0-TermCursor"
@@ -117,4 +108,4 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 
 -- set 80 characters column
 opt.colorcolumn = "80"
-opt.cmdheight = 0
+opt.cmdheight = 1

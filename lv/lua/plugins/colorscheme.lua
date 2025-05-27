@@ -52,6 +52,7 @@ return {
         }),
     },
     {
+        -- iceclimber, gyokuro, hojicha, roseprime
         "cdmill/neomodern.nvim",
         lazy = false,
         priority = 1000,
@@ -61,5 +62,10 @@ return {
             })
             require("neomodern").load()
         end,
+    },
+    {
+        "webhooked/kanso.nvim",
+        lazy = false,
+        priority = 1000,
     },
 }
