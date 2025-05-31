@@ -115,22 +115,17 @@ alias ainstall='paru -S --noconfirm'
 alias asearch='paru -Ss'
 alias aremove='paru -Rns'
 alias yy='yazi'
-alias suspend='i3lock -c 111111;systemctl suspend'
+alias cp='cp -v'
+alias mv='mv -v'
+alias rm='rm -v'
+# alias suspend='i3lock -c 111111;systemctl suspend'
 # alias cp='cp -vair'
 alias vim='nvim'
 alias lv='NVIM_APPNAME=lv nvim'
-# alias ll='eza -ll'
-# alias la='eza -la'
-# alias ls='eza'
 alias lg='lazygit'
-# alias ls='lsd'
-# alias l='lsd -l'
-# alias ll='lsd -l'
-# alias la='lsd -la'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
-# alias reboot='sudo /sbin/shutdown -r now'
-# alias shutdown='sudo /sbin/shutdown -a now'
+
 alias dl='aria2c -x 16 -s 16' # Quick download command using aria2
 alias sde='sudoedit'
 
@@ -183,3 +178,5 @@ HISTFILESIZE=10000
 export MANPAGER='nvim +Man!'
 
 export PATH=$PATH:/home/sealcia/.local/bin
+
+export MAVEN_OPTS="--enable-native-access=ALL-UNNAMED"
