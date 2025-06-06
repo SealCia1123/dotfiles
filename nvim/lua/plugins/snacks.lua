@@ -4,9 +4,24 @@ return {
     lazy = false,
     opts = {
         indent = { enabled = true },
-        scroll = { enabled = false },
+        scroll = {
+            enabled = false,
+            animate = {
+                duration = { step = 7, total = 250 },
+                easing = "linear",
+            },
+            -- faster animation when repeating scroll after delay
+            animate_repeat = {
+                delay = 100, -- delay in ms before using the repeat animation
+                duration = { step = 5, total = 50 },
+                easing = "linear",
+            },
+        },
         input = { enabled = true },
         bigfile = { enabled = true },
+        image = {
+            enabled = true,
+        },
         terminal = {
             enabled = false,
             bo = {
@@ -79,7 +94,7 @@ return {
             refresh = 50, -- refresh at most every 50ms
         },
         quickfile = { enabled = true },
-        statuscolumn = { enabled = false },
+        statuscolumn = { enabled = true },
         words = { enabled = true },
         lazygit = { enabled = true },
         git = {

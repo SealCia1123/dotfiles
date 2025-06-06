@@ -26,10 +26,11 @@ return {
         --
         -- See the full "keymap" documentation for information on defining your own keymap.
         keymap = {
-            preset = "default",
+            preset = "none",
+            ["<Tab>"] = { "fallback" },
             ["<CR>"] = { "fallback" },
             ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
-            ["<C-e>"] = { "hide" },
+            ["<C-e>"] = { "show", "show_documentation", "hide_documentation" },
             ["<C-y>"] = { "select_and_accept" },
             ["<C-p>"] = { "select_prev", "fallback_to_mappings" },
             ["<C-n>"] = { "select_next", "fallback_to_mappings" },
