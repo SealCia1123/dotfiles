@@ -1,6 +1,7 @@
 {
-  "souf": {
-    "prefix": "souf",
-    "body": ["System.out.printf();"]
-  }
+    "souf": {
+        "prefix": "souf",
+        "body": ["System.out.printf(\"${1:text %d}\", ${2:somevalue});"],
+        "description": "System.out.printf with format and value"
+    }
 }
