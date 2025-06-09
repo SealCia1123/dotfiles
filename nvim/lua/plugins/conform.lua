@@ -11,7 +11,7 @@ return {
         },
         formatters = {
             ["google-java-format"] = {
-                prepend_args = { "--aosp" }, -- Android Open Source Project style
+                prepend_args = { "--aosp", "--fix-imports-only" },
             },
         },
     },
