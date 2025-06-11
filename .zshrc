@@ -104,9 +104,10 @@ eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 # Frequently used commands
-alias ..='z ..'
-alias ...='z ../..'
-alias ....='z ../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias update='sudo pacman -Syu --noconfirm;paru -Syu --noconfirm'
 alias install='sudo pacman -S --noconfirm'
 alias remove='sudo pacman -Rns'
@@ -129,11 +130,8 @@ alias shutdown='sudo shutdown now'
 alias dl='aria2c -x 16 -s 16' # Quick download command using aria2
 alias sde='sudoedit'
 
-# Hypr shortcuts
-alias hyprexec='hyprctl dispatch exec' # Eg: hyprexec firefox
-alias hylogout='hyprctl dispatch exit'
-alias lock='hyprlock'
-alias turnofflaptopscreen='hyprctl keyword monitor "eDP-1, disable"'
+# Hyprland shortcuts
+alias hylock='systemctl suspend && hyprlock'
 alias i3turn-off-eDP-1='xrandr --output eDP-1 --off;xrandr'
 
 # TMUX shortcuts
@@ -179,4 +177,4 @@ export MANPAGER='nvim +Man!'
 
 export PATH=$PATH:/home/sealcia/.local/bin
 
-export MAVEN_OPTS="--enable-native-access=ALL-UNNAMED"
+export GDK_BACKEND=wayland

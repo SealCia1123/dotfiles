@@ -1,17 +1,12 @@
-background = #0e0e0e
+background = #0a0a0a
 cursor-style = block
-shell-integration-features = no-cursor
+shell-integration-features = no-cursor,no-sudo,no-title
 cursor-style-blink = false
 background-opacity = 1.0
-cursor-opacity = 1.0
-cursor-color = #e0e0e0
-cursor-text = #0a0a0a
-font-family = Berkeley Mono
-font-family = "JetBrainsMono Nerd Font"
-font-size = 17
-window-padding-x = 0
-window-padding-y = 0
-font-style-italic = false
+background-blur = false
+cursor-text = #0e0e0e
+font-size = 16
+font-style-italic = true
 keybind = alt+one=unbind
 keybind = alt+two=unbind
 keybind = alt+three=unbind
@@ -22,6 +17,6 @@ keybind = alt+seven=unbind
 keybind = alt+eight=unbind
 keybind = alt+nine=unbind
 theme = UltraDark
-adjust-cell-height = 0%
-adjust-cell-width = -4%
 window-decoration = none
+
+font-family = "JetBrainsMono Nerd Font"
