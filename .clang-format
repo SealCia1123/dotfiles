@@ -1,7 +1,7 @@
 BasedOnStyle: LLVM
----
+# ---
 Language: Java
-IndentWidth: 2
+IndentWidth: 4
 AllowShortFunctionsOnASingleLine: None
 ColumnLimit: 100
 BreakAfterJavaFieldAnnotations: true
