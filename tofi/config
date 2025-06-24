@@ -1,18 +1,21 @@
-prompt-text = "> "
-
-text-color = #cdd6f4
-prompt-color = #585b70
-selection-color = #cba6f7
-background-color = #181825dd
-
+anchor = top
 width = 100%
-padding-left = 35%
-padding-top = 30%
-height = 100%
-border-width = 0
+height = 30
+horizontal = true
+font-size = 13
+prompt-text = "> "
+font = JetBrainsMono Nerd Font
 outline-width = 0
-result-spacing = 14
-num-results = 8
-font = SF Pro Display SemiBold
-font-variations = "wght 500"
-font-size = 32
+border-width = 0
+background-color = #000000
+min-input-width = 120
+result-spacing = 15
+padding-top = 0
+padding-bottom = 0
+padding-left = 0
+padding-right = 0
+
+text-color = #ffffff
+prompt-color = #585b70
+selection-color = #285577
+background-color = #000000
