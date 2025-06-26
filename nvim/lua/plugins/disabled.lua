@@ -15,4 +15,5 @@ return {
     -- { "folke/tokyonight.nvim", enabled = false },
     -- { "saghen/blink.cmp", enabled = false },
     { "rcarriga/nvim-notify", enabled = false },
+    { "MeanderingProgrammer/render-markdown.nvim", enabled = false },
 }
