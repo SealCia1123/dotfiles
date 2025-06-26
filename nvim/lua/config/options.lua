@@ -109,3 +109,4 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 -- set 80 characters column
 opt.colorcolumn = "80"
 opt.cmdheight = 1
+opt.wildignorecase = true
