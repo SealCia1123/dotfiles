@@ -13,7 +13,7 @@ set("n", "<c-l>", "<c-w><c-l>")
 -- set("n", "<c-d>", "<c-d>zz")
 
 -- jump to next diagnostics
-set("n", "<leader>nd", require("snacks.picker").diagnostics)
+set("n", "<leader>nd", require("snacks.picker").diagnostics, { desc = "Jump to [n]ext [d]iagnostics" })
 
 -- keymap for cmd mode
 set("c", "<C-h>", "<BS>")
@@ -30,7 +30,7 @@ set("n", "<M-s>", "<C-W>-")
 
 -- for terminal mode
 vim.api.nvim_set_keymap("t", "<esc>", "<C-\\><C-n>", { noremap = true })
-set("n", "<leader>nt", ":vertical terminal<cr>", opts)
+set("n", "<leader>nt", ":vertical terminal<cr>", { silent = true, desc = "[n]ew vertical [t]erminal" })
 
 set("n", "Y", "y$")
 set("n", "dbw", "vbd")
