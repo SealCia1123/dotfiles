@@ -13,7 +13,7 @@ set("n", "<c-l>", "<c-w><c-l>")
 -- set("n", "<c-d>", "<c-d>zz")
 
 -- jump to next diagnostics
--- set("n", "<leader>dn", require("telescope.builtin").diagnostics)
+set("n", "<leader>dn", require("snacks.picker").diagnostics)
 
 -- keymap for cmd mode
 set("c", "<C-h>", "<BS>")
