@@ -34,7 +34,7 @@ return {
                 },
                 -- Override colors
                 colors = {
-                    bg = "#0a0a0a",
+                    bg = "#060606",
                     -- fg = "#cdcdcd",
                     -- floatBorder = "#878787",
                     -- line = "#282830",

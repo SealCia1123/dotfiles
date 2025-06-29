@@ -3,7 +3,7 @@ shell-integration-features = no-cursor,no-sudo,no-title
 cursor-style-blink = false
 background-opacity = 1.0
 background-blur = false
-cursor-text = #0e0e0e
+cursor-text = #090909
 font-size = 16
 font-style-italic = true
 keybind = alt+one=unbind
@@ -15,18 +15,10 @@ keybind = alt+six=unbind
 keybind = alt+seven=unbind
 keybind = alt+eight=unbind
 keybind = alt+nine=unbind
-# theme = UltraDark
 window-decoration = none
 
-font-family = "JetBrainsMono Nerd Font"
-
-# Vague for Ghostty
-# -------------------
-# Theme Author: vague2k <ilovedrawing056@gmail.com>
-# Ported by:	skewb1k <skewb1kunix@gmail.com>
-# License:  	MIT License
-# Upstream: 	https://github.com/vague2k/vague.nvim/blob/main/extras/ghostty/vague
-
+font-family = JetBrainsMono Nerd Font
+# font-family = "Berkeley Mono"
 palette = 0=#252530
 palette = 1=#d8647e
 palette = 2=#7fa563
@@ -44,7 +36,7 @@ palette = 13=#c9b1ca
 palette = 14=#bebeda
 palette = 15=#d7d7d7
 
-background = #0a0a0a
+background = #060606
 foreground = #cdcdcd
 cursor-color = #cdcdcd
 selection-background = #252530
