@@ -2,7 +2,7 @@ return {
     "stevearc/conform.nvim",
     opts = {
         formatters_by_ft = {
-            java = { "clang-format", "google-java-format" },
+            java = { "google-java-format" },
             -- md = { "prettier" },
             xml = { "lemminx" },
             html = { "prettier" },
