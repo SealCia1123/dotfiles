@@ -9,11 +9,8 @@ return {
     { "goolord/alpha-nvim", enabled = false },
     { "nvim-lualine/lualine.nvim", enabled = false },
     { "folke/noice.nvim", enabled = false },
-    -- { "folke/which-key.nvim", enabled = false },
     { "nvim-telescope/telescope.nvim", enabled = false },
     { "hrsh7th/nvim-cmp", enabled = false },
-    -- { "folke/tokyonight.nvim", enabled = false },
-    -- { "saghen/blink.cmp", enabled = false },
     { "rcarriga/nvim-notify", enabled = false },
-    { "MeanderingProgrammer/render-markdown.nvim", enabled = false },
+    { "echasnovski/mini.files", enabled = false },
 }

@@ -5,7 +5,10 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
         vim.opt.colorcolumn = "100"
         vim.opt.wrap = true
         vim.opt.expandtab = true
-        vim.keymap.set("n", "<leader>mv", ":Markview<CR>", { desc = "Toggle Markview plugin" })
+        vim.keymap.set("n", "<leader>mv", ":RenderMarkdown toggle<CR>", { desc = "Toggle RenderMarkdown plugin" })
     end,
 })
-require("markview").setup()
+require("render-markdown").setup()
+require("vague").setup({
+    style = {},
+})
