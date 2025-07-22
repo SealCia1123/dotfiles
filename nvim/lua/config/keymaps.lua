@@ -2,8 +2,8 @@ local opts = { silent = true }
 local set = vim.keymap.set
 
 -- rename keymap
-vim.keymap.set("n", "<leader>rn", ":IncRename ")
-
+set("n", "<leader>rn", ":IncRename ")
+set("v", "<C-a>", "ggVG", { desc = "Select [a]ll" })
 -- jump between buffers
 set("n", "<c-j>", "<c-w><c-j>")
 set("n", "<c-h>", "<c-w><c-h>")
@@ -36,4 +36,4 @@ set("n", "Y", "y$")
 set("n", "dbw", "vbd")
 set("n", "O", "O<esc>", opts)
 set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-set("v", "<leader>p", "_dP'")
+set("v", "<leader>p", "_dP'", { desc = "[p]aste without override register" })

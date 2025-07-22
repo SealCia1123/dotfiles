@@ -28,10 +28,10 @@ local config = {
     },
     cmd = {
         "java",
-        "-Xms256m",
-        "-Xmx2g",
         "-XX:+UseG1GC", -- G1GC garbage collector algorithm
         -- "-XX:+UseParallelGC",
+        "-Xms256m",
+        "-Xmx2g",
         "-XX:+UseStringDeduplication",
         "-XX:+TieredCompilation",
         "-XX:MaxGCPauseMillis=100",

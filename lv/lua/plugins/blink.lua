@@ -59,14 +59,6 @@ return {
             -- `lsp`, `buffer`, `snippets`, `path` and `omni` are built-in
             -- so you don't need to define them in `sources.providers`
             default = { "lsp", "buffer", "snippets", "path" },
-
-            per_filetype = { sql = { "dadbod" } },
-            providers = {
-                dadbod = {
-                    name = "Dadbod",
-                    module = "vim_dadbod_completion.blink",
-                },
-            },
         },
 
         -- Blink.cmp uses a Rust fuzzy matcher by default for typo resistance and significantly better performance

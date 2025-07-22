@@ -1,5 +1,6 @@
 return {
     "saghen/blink.cmp",
+    lazy = false,
     -- optional: provides snippets for the snippet source
     dependencies = {
         "rafamadriz/friendly-snippets",
@@ -46,7 +47,7 @@ return {
             -- Sets the fallback highlight groups to nvim-cmp's highlight groups
             -- Useful for when your theme doesn't support blink.cmp
             -- Will be removed in a future release
-            use_nvim_cmp_as_default = true,
+            use_nvim_cmp_as_default = false,
             -- Set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
             -- Adjusts spacing to ensure icons are aligned
             nerd_font_variant = "normal",
@@ -59,7 +60,7 @@ return {
         completion = {
             menu = {
                 draw = {
-                    columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind" } },
+                    columns = { { "label", "label_description", gap = 0 }, { "kind_icon", "kind" } },
                     components = {
                         kind_icon = {
                             text = function(ctx)
@@ -111,7 +112,7 @@ return {
         sources = {
             -- `lsp`, `buffer`, `snippets`, `path` and `omni` are built-in
             -- so you don't need to define them in `sources.providers`
-            default = { "snippets", "lsp", "buffer", "path", "omni" },
+            default = { "snippets", "lsp", "buffer", "path", "omni", "cmdline" },
             providers = {},
         },
 
