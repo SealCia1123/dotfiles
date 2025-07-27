@@ -13,19 +13,23 @@ if not status then
 end
 local extendedClientCapabilities = jdtls.extendedClientCapabilities
 local config = {
-    capabilities = {
-        workspace = {
-            configuration = true,
-        },
-        textDocument = {
-            completion = {
-                completeopt = "menu,menuone,fuzzy",
-                completionItem = {
-                    snippentSupport = true,
-                },
-            },
-        },
-    },
+    -- !IMPORTANT make javadoc visible when typing completion
+    capabilities = require("blink-cmp").get_lsp_capabilities(),
+
+    -- capabilities = {
+    --     workspace = {
+    --         configuration = true,
+    --     },
+    --     textDocument = {
+    --         completion = {
+    --             completeopt = "menu,menuone,fuzzy",
+    --             completionItem = {
+    --                 snippentSupport = true,
+    --             },
+    --         },
+    --     },
+    -- },
+
     cmd = {
         "java",
         "-XX:+UseG1GC", -- G1GC garbage collector algorithm
