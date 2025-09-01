@@ -10,7 +10,6 @@
         "cpu",
         "memory",
         "tray",
-        "custom/lock",
     ],
     "hyprland/workspaces": {
         "format": "{name}: {icon}",
@@ -24,9 +23,9 @@
         "spacing": 10,
     },
     "clock": {
-        // "timezone": "America/Denver",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%d - %H:%M}",
+        "format": "{:%R %A %Y-%m-%d}",
+        "format-alt": "{:%d %B W%V %Y}",
+        "tooltip": false,
     },
     "network": {
         "format-wifi": "󰤢 ",
@@ -51,18 +50,6 @@
             "default": ["", "", " "],
         },
         "on-click": "pavucontrol",
-    },
-    "custom/lock": {
-        "tooltip": false,
-        "on-click": "sh -c '(sleep 0.5s; hyprlock)' & disown",
-        "format": "",
-    },
-    "custom/stream_status": {
-        "format": "{text}",
-        "exec": "~/.local/scripts/stream_status",
-        "interval": 5,
-        "return-type": "json",
-        "tooltip": true,
     },
     "later": {
         "format": "<span class='icon'>{icon}</span> <span class='text'>{text}</span>",
