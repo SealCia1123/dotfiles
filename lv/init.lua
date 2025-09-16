@@ -1,5 +1,5 @@
 require("config.lazy")
-vim.cmd.colorscheme("roseprime")
+vim.cmd.colorscheme("rose-pine")
 require("lspconfig").jdtls.setup({})
 -- require("mini.statusline").setup({})
 require("el").setup({})

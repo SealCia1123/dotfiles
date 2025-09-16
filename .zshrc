@@ -70,7 +70,6 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions)
-# plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,11 +115,9 @@ alias ainstall='paru -S --noconfirm'
 alias asearch='paru -Ss'
 alias aremove='paru -Rns'
 alias yy='yazi'
-alias cp='cp -v'
-alias mv='mv -v'
-alias rm='rm -v'
-# alias suspend='i3lock -c 111111;systemctl suspend'
-# alias cp='cp -vair'
+# alias cp='cp'
+# alias mv='mv'
+# alias rm='rm'
 alias vim='nvim'
 alias lv='NVIM_APPNAME=lv nvim'
 alias lg='lazygit'
@@ -132,7 +129,6 @@ alias sde='sudoedit'
 
 # Hyprland shortcuts
 alias hylock='systemctl suspend && hyprlock'
-alias i3turn-off-eDP-1='xrandr --output eDP-1 --off;xrandr'
 
 # TMUX shortcuts
 alias t="tmux new -s home"
@@ -143,7 +139,7 @@ alias df='df -h'
 
 # Boot to windows/fedora
 alias winboot='sudo efibootmgr --bootnext 0003; sudo reboot'
-alias fedoraboot='sudo efibootmgr --bootnext 0001; sudo reboot'
+alias cachyboot='sudo efibootmgr --bootnext 0006; sudo reboot'
 source <(fzf --zsh)
 
 # Enable vim mode in terminal
@@ -176,5 +172,3 @@ HISTFILESIZE=10000
 export MANPAGER='nvim +Man!'
 
 export PATH=$PATH:/home/sealcia/.local/bin
-
-export GDK_BACKEND=wayland
