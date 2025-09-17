@@ -5,7 +5,7 @@ background-opacity = 1.0
 background-blur = false
 cursor-text = #090909
 font-size = 16
-font-style-italic = true
+# font-style-italic = true
 keybind = alt+one=unbind
 keybind = alt+two=unbind
 keybind = alt+three=unbind
@@ -16,9 +16,9 @@ keybind = alt+seven=unbind
 keybind = alt+eight=unbind
 keybind = alt+nine=unbind
 window-decoration = none
+app-notifications = no-clipboard-copy
 
 font-family = JetBrainsMono Nerd Font
-# font-family = "Berkeley Mono"
 palette = 0=#252530
 palette = 1=#d8647e
 palette = 2=#7fa563
