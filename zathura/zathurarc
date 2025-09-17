@@ -4,6 +4,7 @@ set recolor
 set recolor-lightcolor \#16191c
 set default-bg \#16191c
 set recolor-keephue
+set selection-notification false
 
 set adjust-open width
 set sandbox none
