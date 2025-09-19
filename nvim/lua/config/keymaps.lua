@@ -37,3 +37,6 @@ set("n", "dbw", "vbd")
 set("n", "O", "O<esc>", opts)
 set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 set("v", "<leader>p", "_dP'", { desc = "[p]aste without override register" })
+
+set("n", "<M-h>", ":bprevious<CR>", { desc = "Switch to previous buffer" })
+set("n", "<M-l>", ":bnext<CR>", { desc = "Switch to next buffer" })
