@@ -59,7 +59,7 @@ return {
 
         completion = {
             menu = {
-                border = "rounded",
+                border = "single",
                 draw = {
                     columns = { { "label", "label_description", gap = 0 }, { "kind_icon", "kind" } },
                     components = {
@@ -116,6 +116,24 @@ return {
             -- so you don't need to define them in `sources.providers`
             default = { "snippets", "lsp", "buffer", "path", "omni", "cmdline" },
             providers = {},
+        },
+
+        cmdline = {
+            enabled = true,
+            keymap = {
+                preset = "none",
+                ["<Tab>"] = { "fallback" },
+                ["<CR>"] = { "fallback" },
+                ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+                ["<C-e>"] = { "show", "show_documentation", "hide_documentation" },
+                ["<C-y>"] = { "select_and_accept" },
+                ["<C-p>"] = { "select_prev", "fallback_to_mappings" },
+                ["<C-n>"] = { "select_next", "fallback_to_mappings" },
+                ["<C-b>"] = { "snippet_backward", "fallback" },
+                ["<C-f>"] = { "snippet_forward", "fallback" },
+                ["<C-j>"] = { "scroll_documentation_down", "fallback" },
+                ["<C-k>"] = { "scroll_documentation_up", "fallback" },
+            },
         },
 
         -- Blink.cmp uses a Rust fuzzy matcher by default for typo resistance and significantly better performance
