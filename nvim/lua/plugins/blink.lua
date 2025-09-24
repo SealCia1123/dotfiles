@@ -1,6 +1,6 @@
 return {
     "saghen/blink.cmp",
-    -- lazy = true,
+    lazy = false,
     -- optional: provides snippets for the snippet source
     dependencies = {
         "rafamadriz/friendly-snippets",
@@ -59,11 +59,10 @@ return {
 
         completion = {
             menu = {
-                border = "single",
                 draw = {
-                    columns = { { "label", "label_description", gap = 0 }, { "kind_icon", "kind" } },
                     components = {
                         kind_icon = {
+                            ellipsis = true,
                             text = function(ctx)
                                 local icon = ctx.kind_icon
                                 if vim.tbl_contains({ "Path" }, ctx.source_name) then
@@ -80,9 +79,6 @@ return {
                                 return icon .. ctx.icon_gap
                             end,
 
-                            -- Optionally, use the highlight groups from nvim-web-devicons
-                            -- You can also add the same function for `kind.highlight` if you want to
-                            -- keep the highlight groups in sync with the icons.
                             highlight = function(ctx)
                                 local hl = ctx.kind_hl
                                 if vim.tbl_contains({ "Path" }, ctx.source_name) then
@@ -103,7 +99,7 @@ return {
                 auto_show = true,
                 auto_show_delay_ms = 300,
                 window = {
-                    border = "rounded",
+                    border = "none",
                 },
             },
         },

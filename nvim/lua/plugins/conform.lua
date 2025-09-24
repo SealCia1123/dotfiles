@@ -9,9 +9,9 @@ return {
             ts = { "prettier" },
         },
         formatters = {
-            ["google-java-format"] = {
-                prepend_args = { "--aosp" },
-            },
+            -- ["google-java-format"] = {
+            --     prepend_args = { "--aosp" },
+            -- },
         },
     },
 }
