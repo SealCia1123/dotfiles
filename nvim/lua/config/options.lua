@@ -103,6 +103,14 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = "#606079" })
         vim.api.nvim_set_hl(0, "SnacksIndent", { fg = "#393B42" })
         vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#252530" })
+        vim.api.nvim_set_hl(0, "BlinkCmpMenu", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "BlinkCmpKind", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "BlinkCmpScrollBarGutter", { bg = "#0e0e0e" })
+        vim.api.nvim_set_hl(0, "BlinkCmpDoc", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "BlinkCmpDocSeparator", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "BlinkCmpSignatureHelp", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#141415" })
     end,
 })
 
