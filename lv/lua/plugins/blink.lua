@@ -49,7 +49,38 @@ return {
         },
 
         completion = {
+            menu = {
+                draw = {
+                    components = {
+                        kind_icon = {
+                            text = function(ctx)
+                                local kind_icon, _, _ = require("mini.icons").get("lsp", ctx.kind)
+                                return kind_icon
+                            end,
+                            -- (optional) use highlights from mini.icons
+                            highlight = function(ctx)
+                                local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+                                return hl
+                            end,
+                        },
+                        kind = {
+                            highlight = function(ctx)
+                                local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
+                                return hl
+                            end,
+                        },
+                    },
+                },
+            },
+
             ghost_text = { enabled = false },
+            documentation = {
+                auto_show = true,
+                auto_show_delay_ms = 300,
+                window = {
+                    border = "none",
+                },
+            },
         },
 
         -- Default list of enabled providers defined so that you can extend it
