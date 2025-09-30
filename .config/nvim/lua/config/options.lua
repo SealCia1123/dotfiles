@@ -110,6 +110,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         vim.api.nvim_set_hl(0, "BlinkCmpDocSeparator", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "BlinkCmpSignatureHelp", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "BlinkCmpLabelDescription", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "BlinkCmpLabelDetail", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "BlinkCmpSource", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "#141415" })
