@@ -4,7 +4,7 @@ return {
         formatters_by_ft = {
             java = { "google-java-format" },
             xml = { "lemminx" },
-            html = { "prettier" },
+            html = {},
             js = { "prettier" },
             ts = { "prettier" },
         },

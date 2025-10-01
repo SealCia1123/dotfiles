@@ -13,7 +13,7 @@ set("n", "<c-l>", "<c-w><c-l>")
 -- set("n", "<c-d>", "<c-d>zz")
 
 -- jump to next diagnostics
-set("n", "<leader>nd", require("snacks.picker").diagnostics, { desc = "Jump to [n]ext [d]iagnostics" })
+set("n", "<leader>dn", require("snacks.picker").diagnostics, { desc = "Jump to [n]ext [d]iagnostics" })
 
 -- keymap for cmd mode
 set("c", "<C-h>", "<BS>")
