@@ -1,0 +1,63 @@
+{
+    "disable_ai": true,
+    "minimap": {
+        "show": "auto"
+    },
+    "inlay_hints": {
+        "enabled": false,
+        "show_value_hints": true,
+        "show_type_hints": true,
+        "show_parameter_hints": true,
+        "show_other_hints": true,
+        "show_background": false,
+        "edit_debounce_ms": 700,
+        "scroll_debounce_ms": 50,
+        "toggle_on_modifiers_press": {
+            "control": false,
+            "alt": false,
+            "shift": false,
+            "platform": false,
+            "function": false
+        }
+    },
+    "vim_mode": true,
+    "ui_font_size": 17.0,
+    "buffer_font_size": 19.0,
+    "theme": {
+        "mode": "system",
+        "light": "Gruvbox Light",
+        "dark": "Catppuccin Mocha"
+    },
+    "cursor_blink": false,
+    "format_on_save": "on",
+    "vim": {
+        "use_system_clipboard": "always"
+    },
+    "languages": {
+        "HTML": {
+            "format_on_save": "off"
+        }
+    },
+    "tab_size": 4,
+    "lsp": {
+        "basedpyright": {
+            "settings": {
+                "typeCheckingMode": "basic",
+                "basedpyright.analysis": {
+                    "diagnosticMode": "workspace",
+                    "inlayHints.callArgumentNames": false,
+                    "typeCheckingMode": "basic",
+                    "logLevel": "error"
+                }
+            }
+        }
+    },
+    "tab_bar": {
+        "show": false
+    },
+    "current_line_highlight": "none",
+    "terminal": {
+        "font_size": 15
+    },
+    "relative_line_numbers": true
+}
