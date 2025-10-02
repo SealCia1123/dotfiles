@@ -27,7 +27,7 @@
     "theme": {
         "mode": "system",
         "light": "Gruvbox Light",
-        "dark": "Catppuccin Mocha"
+        "dark": "VSCode Dark Modern"
     },
     "cursor_blink": false,
     "format_on_save": "on",

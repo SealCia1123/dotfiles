@@ -6,3 +6,4 @@ require("oil").setup()
 require("treesitter-context").setup()
 
 require("el").setup({})
+require("mini.git").setup()
