@@ -1,5 +1,6 @@
 return {
     "dmtrKovalenko/fff.nvim",
+    lazy = false,
     build = function()
         -- this will download prebuild binary or try to use existing rustup toolchain to build from source
         -- (if you are using lazy you can use gb for rebuilding a plugin if needed)
@@ -19,20 +20,7 @@ return {
             width = 0.8,
             prompt_position = "top", -- or 'top'
             preview_position = "right", -- or 'left', 'right', 'top', 'bottom'
-            preview_size = 0.65,
+            preview_size = 0.6,
         },
     },
-
-    -- No need to lazy-load with lazy.nvim.
-    -- This plugin initializes itself lazily.
-    lazy = false,
-    -- keys = {
-    --     {
-    --         "ff", -- try it if you didn't it is a banger keybinding for a picker
-    --         function()
-    --             require("fff").find_files()
-    --         end,
-    --         desc = "FFFind files",
-    --     },
-    -- },
 }
