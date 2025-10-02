@@ -62,6 +62,8 @@ return {
             -- LSP Server Settings
             ---@type table<string, vim.lsp.Config|{mason?:boolean, enabled?:boolean}|boolean>
             servers = {
+                clangd = {},
+                clang_format = {},
                 lua_ls = {
                     -- mason = false, -- set to false if you don't want this server to be installed with mason
                     -- Use this to add any additional keymaps
