@@ -137,6 +137,9 @@ alias tk='tmux kill-session -t'
 alias tl='tmux ls'
 alias df='df -h'
 
+# Convert DOCX to PDF
+alias convert-to-pdf=soffice --headless --convert-to pdf
+
 # Boot to windows/fedora
 alias winboot='sudo efibootmgr --bootnext 0003; sudo reboot'
 alias cachyboot='sudo efibootmgr --bootnext 0006; sudo reboot'

@@ -101,9 +101,9 @@ return {
             enabled = true,
         },
         picker = {
-            exclude = { "*.class", "*.jar", "target*", "*.out" }, -- exclude files
+            exclude = { "*.class", "*.jar", "target/*", "*.out" }, -- exclude files
             enabled = true,
-            prompt = "🔎 ",
+            prompt = "🐧 ",
             sources = {},
             focus = "input",
             layout = {
@@ -113,7 +113,7 @@ return {
                     box = "horizontal",
                     width = 0.8,
                     min_width = 120,
-                    height = 0.8,
+                    height = 0.85,
                     {
                         box = "vertical",
                         border = "rounded",
@@ -121,7 +121,7 @@ return {
                         { win = "input", height = 1, border = "bottom" },
                         { win = "list", border = "none" },
                     },
-                    { win = "preview", title = "{preview}", border = "rounded", width = 0.65 },
+                    { win = "preview", title = "{preview}", border = "rounded", width = 0.6 },
                 },
             },
             ---@class snacks.picker.matcher.Config
@@ -481,8 +481,7 @@ return {
         {
             "<leader>ff",
             function()
-                -- Snacks.picker.files()
-                vim.cmd("FFFFind")
+                Snacks.picker.files()
             end,
             desc = "Find Files",
         },
