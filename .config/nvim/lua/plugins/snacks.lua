@@ -103,15 +103,26 @@ return {
         picker = {
             exclude = { "*.class", "*.jar", "target*", "*.out" }, -- exclude files
             enabled = true,
-            prompt = "> ",
+            prompt = "🔎 ",
             sources = {},
             focus = "input",
             layout = {
                 cycle = true,
-                --- Use the default layout or vertical if the window is too narrow
-                preset = function()
-                    return vim.o.columns >= 120 and "default" or "vertical"
-                end,
+
+                layout = {
+                    box = "horizontal",
+                    width = 0.8,
+                    min_width = 120,
+                    height = 0.8,
+                    {
+                        box = "vertical",
+                        border = "rounded",
+                        title = "{title} {live} {flags}",
+                        { win = "input", height = 1, border = "bottom" },
+                        { win = "list", border = "none" },
+                    },
+                    { win = "preview", title = "{preview}", border = "rounded", width = 0.65 },
+                },
             },
             ---@class snacks.picker.matcher.Config
             matcher = {
@@ -214,9 +225,9 @@ return {
                         ["<a-p>"] = { "toggle_preview", mode = { "i", "n" } },
                         ["<a-w>"] = { "cycle_win", mode = { "i", "n" } },
                         ["<c-a>"] = { "select_all", mode = { "n", "i" } },
-                        ["<c-b>"] = { "preview_scroll_up", mode = { "i", "n" } },
-                        ["<c-d>"] = { "list_scroll_down", mode = { "i", "n" } },
-                        ["<c-f>"] = { "preview_scroll_down", mode = { "i", "n" } },
+                        ["<c-u>"] = { "preview_scroll_up", mode = { "i", "n" } },
+                        -- ["<c-d>"] = { "list_scroll_down", mode = { "i", "n" } },
+                        ["<c-d>"] = { "preview_scroll_down", mode = { "i", "n" } },
                         ["<c-g>"] = { "toggle_live", mode = { "i", "n" } },
                         ["<c-j>"] = { "list_down", mode = { "i", "n" } },
                         ["<c-k>"] = { "list_up", mode = { "i", "n" } },
@@ -225,7 +236,7 @@ return {
                         ["<c-q>"] = { "qflist", mode = { "i", "n" } },
                         ["<c-s>"] = { "edit_split", mode = { "i", "n" } },
                         ["<c-t>"] = { "tab", mode = { "n", "i" } },
-                        ["<c-u>"] = { "list_scroll_up", mode = { "i", "n" } },
+                        -- ["<c-u>"] = { "list_scroll_up", mode = { "i", "n" } },
                         ["<c-v>"] = { "edit_vsplit", mode = { "i", "n" } },
                         ["<c-r>#"] = { "insert_alt", mode = "i" },
                         ["<c-r>%"] = { "insert_filename", mode = "i" },
@@ -470,7 +481,8 @@ return {
         {
             "<leader>ff",
             function()
-                Snacks.picker.files()
+                -- Snacks.picker.files()
+                vim.cmd("FFFFind")
             end,
             desc = "Find Files",
         },
