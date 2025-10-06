@@ -16,37 +16,20 @@ local config = {
     -- !IMPORTANT make javadoc visible when typing completion
     capabilities = require("blink-cmp").get_lsp_capabilities(),
 
-    -- capabilities = {
-    --     workspace = {
-    --         configuration = true,
-    --     },
-    --     textDocument = {
-    --         completion = {
-    --             completeopt = "menu,menuone,fuzzy",
-    --             completionItem = {
-    --                 snippentSupport = true,
-    --             },
-    --         },
-    --     },
-    -- },
-
     cmd = {
         "java",
-        "-XX:+UseG1GC", -- G1GC garbage collector algorithm
-        -- "-XX:+UseParallelGC",
+        "-XX:+UseG1GC",
         "-Xms256m",
-        "-Xmx2g",
+        "-Xmx1g",
         "-XX:+UseStringDeduplication",
         "-XX:+TieredCompilation",
-        "-XX:MaxGCPauseMillis=100",
-        "-XX:GCTimeRatio=4",
-        "-XX:AdaptiveSizePolicyWeight=90",
+        "-XX:MaxGCPauseMillis=150",
         "-Dsun.zip.disableMemoryMapping=true",
         "-Declipse.application=org.eclipse.jdt.ls.core.id1",
         "-Dosgi.bundles.defaultStartLevel=4",
         "-Declipse.product=org.eclipse.jdt.ls.core.product",
         "-Dlog.protocol=true",
-        "-Dlog.level=ALL",
+        "-Dlog.level=WARN",
         "--add-modules=ALL-SYSTEM",
         "--add-opens",
         "java.base/java.util=ALL-UNNAMED",
@@ -73,10 +56,20 @@ local config = {
                 downloadSources = true,
             },
             referencesCodeLens = {
-                enabled = true,
+                enabled = false,
             },
             references = {
-                includeDecompiledSources = true,
+                includeDecompiledSources = false,
+            },
+            completion = {
+                favoriteStaticMembers = {
+                    "org.hamcrest.MatcherAssert.assertThat",
+                    "org.hamcrest.Matchers.*",
+                    "org.junit.jupiter.api.Assertions.*",
+                    "java.util.stream.Collectors.*",
+                    "org.mockito.Mockito.*",
+                },
+                guessMethodArguments = false,
             },
             inlayHints = {
                 parameterNames = {
@@ -85,6 +78,10 @@ local config = {
             },
             format = {
                 enabled = false,
+                settings = {
+                    url = vim.fn.expand("~/eclipse-java-google-style.xml"),
+                    profile = "GoogleStyle",
+                },
             },
         },
     },
@@ -94,8 +91,5 @@ local config = {
         usePlaceholders = true,
     },
 }
--- config.capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
--- config.capabilities = require("blink.cmp").get_lsp_capabilities(vim.lsp.protocol.make_client_capabilities())
--- config.capabilities = require("blink.cmp").get_lsp_capabilities()
 
 require("jdtls").start_or_attach(config)

@@ -115,6 +115,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "#141415" })
+        vim.api.nvim_set_hl(0, "SnippetTabstop", { bg = "none" })
+        vim.api.nvim_set_hl(0, "BlinkCmpDocCursorLine", { bg = "none", link = "SnippetTabstop" })
     end,
 })
 

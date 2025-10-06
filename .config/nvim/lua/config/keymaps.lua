@@ -9,8 +9,6 @@ set("n", "<c-j>", "<c-w><c-j>")
 set("n", "<c-h>", "<c-w><c-h>")
 set("n", "<c-k>", "<c-w><c-k>")
 set("n", "<c-l>", "<c-w><c-l>")
--- set("n", "<c-u>", "<c-u>zz")
--- set("n", "<c-d>", "<c-d>zz")
 
 -- jump to next diagnostics
 set("n", "<leader>dn", require("snacks.picker").diagnostics, { desc = "Jump to [n]ext [d]iagnostics" })
