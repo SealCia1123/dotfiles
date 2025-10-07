@@ -3,11 +3,17 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
-        indent = { enabled = true },
+        indent = {
+            enabled = true,
+            char = "│",
+            animate = {
+                enabled = false,
+            },
+        },
         scroll = {
             enabled = true,
             animate = {
-                duration = { step = 20, total = 250 },
+                duration = { step = 30, total = 300 },
                 easing = "linear",
             },
             -- faster animation when repeating scroll after delay
@@ -94,7 +100,7 @@ return {
             refresh = 50, -- refresh at most every 50ms
         },
         quickfile = { enabled = true },
-        statuscolumn = { enabled = true },
+        statuscolumn = { enabled = false },
         words = { enabled = true },
         lazygit = { enabled = true },
         git = {

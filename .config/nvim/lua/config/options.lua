@@ -58,9 +58,9 @@ local comment = "#606079"
 vim.api.nvim_create_autocmd("ColorScheme", {
     pattern = "*",
     callback = function()
-        vim.api.nvim_set_hl(0, "LspReferenceRead", {})
-        vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
-        vim.api.nvim_set_hl(0, "LspReferenceText", {})
+        -- vim.api.nvim_set_hl(0, "LspReferenceRead", {})
+        -- vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
+        -- vim.api.nvim_set_hl(0, "LspReferenceText", {})
         vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", { fg = fg, bg = background })
         vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", { fg = fg, bg = background })
         vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = fg, bg = background })
