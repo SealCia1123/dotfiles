@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=/usr/bin/thorium-browser-avx2 %u
-MimeType=x-scheme-handler/http;
-Name=thorium-browser-avx2
-NoDisplay=true
-Type=Application

@@ -1,4 +1,8 @@
 {
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
     "disable_ai": true,
     "minimap": {
         "show": "auto"
@@ -20,14 +24,14 @@
             "function": false
         }
     },
-    "vim_mode": false,
+    "vim_mode": true,
     "ui_font_size": 17.0,
     "buffer_font_size": 19.0,
     "buffer_font_family": "JetBrainsMono Nerd Font",
     "theme": {
         "mode": "system",
         "light": "Gruvbox Light",
-        "dark": "VSCode Dark Modern"
+        "dark": "Rosé Pine"
     },
     "cursor_blink": false,
     "format_on_save": "on",
