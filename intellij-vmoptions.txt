@@ -1,5 +1,5 @@
--Dide.managed.by.toolbox=/home/sealcia/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox
+-Dide.managed.by.toolbox=/home/harry/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox
 -Dtoolbox.notification.token=58136dbb-82d6-41ff-959f-7ce1e2da165b
--Dtoolbox.notification.portFile=/home/sealcia/.cache/JetBrains/Toolbox/ports/762135c2-2932-4284-866c-41ef697ee76b.port
+-Dtoolbox.notification.portFile=/home/harry/.cache/JetBrains/Toolbox/ports/762135c2-2932-4284-866c-41ef697ee76b.port
 -Xmx1961m
 -Dawt.toolkit.name=WLToolkit

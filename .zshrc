@@ -107,11 +107,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias update='sudo pacman -Syu --noconfirm;paru -Syu --noconfirm'
-alias install='sudo pacman -S --noconfirm'
+alias update='sudo pacman -Syu;paru -Syu'
+alias install='sudo pacman -S'
 alias remove='sudo pacman -Rns'
 alias search='pacman -Ss'
-alias ainstall='paru -S --noconfirm'
+alias ainstall='paru -S'
 alias asearch='paru -Ss'
 alias aremove='paru -Rns'
 alias yy='yazi'
@@ -148,13 +148,10 @@ source <(fzf --zsh)
 # Enable vim mode in terminal
 # set -o vi
 
-# source zsh syntax highlighting
-# source /home/sealcia/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
 export TERMINAL="/usr/bin/ghostty"
-export BROWSER="/usr/bin/brave"
+export BROWSER="/usr/bin/thorium-browser-avx2"
 export FIREFOX="/usr/bin/librewolf"
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 # export XMODIFIERS=@im=fcitx
@@ -174,4 +171,4 @@ HISTSIZE=5000
 HISTFILESIZE=10000
 export MANPAGER='nvim +Man!'
 
-export PATH=$PATH:/home/sealcia/.local/bin
+export PATH=$PATH:/home/harry/.local/bin

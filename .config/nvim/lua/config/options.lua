@@ -19,7 +19,7 @@ vim.opt.listchars:append({
     tab = "  ",
 })
 
-opt.scrolloff = 8
+opt.scrolloff = 6
 opt.showtabline = 0
 opt.statuscolumn = ""
 opt.shortmess = "ltToOCF"
