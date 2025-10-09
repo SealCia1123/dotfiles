@@ -153,10 +153,6 @@ export VISUAL="/usr/bin/nvim"
 export TERMINAL="/usr/bin/ghostty"
 export BROWSER="/usr/bin/thorium-browser-avx2"
 export FIREFOX="/usr/bin/librewolf"
-# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
-# export XMODIFIERS=@im=fcitx
-# export QT_IM_MODULE=fcitx
-# export GTK_IM_MODULE=fcitx
 
 export FZF_COMPLETION_TRIGGER='::'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
@@ -171,4 +167,4 @@ HISTSIZE=5000
 HISTFILESIZE=10000
 export MANPAGER='nvim +Man!'
 
-export PATH=$PATH:/home/harry/.local/bin
+export PATH=$PATH:$HOME/.local/bin
