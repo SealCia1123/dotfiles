@@ -3,14 +3,7 @@
     "position": "top",
     "modules-left": ["custom/stream_status", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": [
-        "pulseaudio",
-        "battery",
-        "network",
-        "cpu",
-        "memory",
-        "tray",
-    ],
+    "modules-right": ["pulseaudio", "battery", "network", "memory", "tray"],
     "hyprland/workspaces": {
         "format": "{name}: {icon}",
         "format-icons": {
@@ -33,11 +26,6 @@
         "format-disconnected": "󰤠 ",
         "interval": 5,
         "tooltip": false,
-    },
-    "cpu": {
-        "interval": 1,
-        "format": "  {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     },
     "memory": {
         "interval": 30,

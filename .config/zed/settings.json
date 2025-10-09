@@ -25,13 +25,13 @@
         }
     },
     "vim_mode": true,
-    "ui_font_size": 17.0,
+    "ui_font_size": 16.0,
     "buffer_font_size": 19.0,
-    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_family": "FiraCode Nerd Font",
     "theme": {
         "mode": "system",
         "light": "Gruvbox Light",
-        "dark": "Rosé Pine"
+        "dark": "VSCode Dark Modern"
     },
     "cursor_blink": false,
     "format_on_save": "on",

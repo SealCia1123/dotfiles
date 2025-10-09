@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Exec=/usr/bin/thorium-browser-avx2 %f
+Name=thorium-browser-avx2
+Comment=Custom definition for thorium-browser-avx2
