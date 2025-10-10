@@ -129,6 +129,7 @@ alias sde='sudoedit'
 
 # Hyprland shortcuts
 alias hylock='systemctl suspend && hyprlock'
+alias hylogout='hyprctl dispatch exit'
 
 # TMUX shortcuts
 alias t="tmux new -s home"
@@ -168,3 +169,8 @@ HISTFILESIZE=10000
 export MANPAGER='nvim +Man!'
 
 export PATH=$PATH:$HOME/.local/bin
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export SDL_IM_MODULE=fcitx
+export INPUT_METHOD=fcitx

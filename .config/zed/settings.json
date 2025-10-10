@@ -31,7 +31,7 @@
     "theme": {
         "mode": "system",
         "light": "Gruvbox Light",
-        "dark": "VSCode Dark Modern"
+        "dark": "Ayu Mirage"
     },
     "cursor_blink": false,
     "format_on_save": "on",
@@ -58,7 +58,7 @@
         }
     },
     "tab_bar": {
-        "show": false
+        "show": true
     },
     "current_line_highlight": "none",
     "terminal": {

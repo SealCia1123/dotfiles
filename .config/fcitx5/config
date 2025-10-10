@@ -8,7 +8,7 @@ EnumerateBackwardKeys=
 # Skip first input method while enumerating
 EnumerateSkipFirst=False
 # Time limit in milliseconds for triggering modifier key shortcuts
-ModifierOnlyKeyTimeout=250
+ModifierOnlyKeyTimeout=300
 
 [Hotkey/TriggerKeys]
 0=Control+Shift+Shift_L
@@ -51,7 +51,7 @@ ActiveByDefault=False
 # Reset state on Focus In
 resetStateWhenFocusIn=No
 # Share Input State
-ShareInputState=All
+ShareInputState=Program
 # Show preedit in application
 PreeditEnabledByDefault=True
 # Show Input Method Information when switch input method

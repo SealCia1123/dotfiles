@@ -1,5 +1,3 @@
-paru -S --needed - < pkglist-all.txt
-
 accountsservice
 adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
@@ -56,6 +54,7 @@ chafa
 char-white
 chwd
 cpupower
+cromite-bin
 cryptsetup
 dbeaver
 device-mapper
@@ -82,6 +81,7 @@ fastfetch
 fcitx5
 fcitx5-bamboo
 fcitx5-configtool
+ferdium
 ffmpegthumbnailer
 ffmpegthumbs
 filelight
@@ -274,6 +274,7 @@ thunar-volman
 tmux
 tofi
 tree
+tree-sitter-cli
 ttf-bitstream-vera
 ttf-dejavu
 ttf-liberation
