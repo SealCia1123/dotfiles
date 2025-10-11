@@ -125,3 +125,15 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 opt.colorcolumn = "80"
 opt.cmdheight = 1
 opt.wildignorecase = true
+vim.g.clipboard = {
+    name = "wl-clipboard",
+    copy = {
+        ["+"] = "wl-copy",
+        ["*"] = "wl-copy",
+    },
+    paste = {
+        ["+"] = "wl-paste",
+        ["*"] = "wl-paste",
+    },
+    cache_enabled = 1,
+}

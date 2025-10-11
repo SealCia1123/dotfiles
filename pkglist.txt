@@ -50,11 +50,12 @@ cachyos-v4-mirrorlist
 cachyos-wallpapers
 cachyos-zsh-config
 catfish
+cava
 chafa
 char-white
 chwd
+cliphist
 cpupower
-cromite-bin
 cryptsetup
 dbeaver
 device-mapper
@@ -81,7 +82,6 @@ fastfetch
 fcitx5
 fcitx5-bamboo
 fcitx5-configtool
-ferdium
 ffmpegthumbnailer
 ffmpegthumbs
 filelight
@@ -149,12 +149,15 @@ lib32-mesa
 lib32-opencl-mesa
 lib32-vulkan-intel
 libdvdcss
+libgnome-keyring
 libgsf
 libopenraw
 libplasma
 libreoffice-fresh
 librewolf-bin
 libva-intel-driver
+libva-vdpau-driver-vp9-git
+libvirt
 libwnck3
 linux-cachyos
 linux-cachyos-headers
@@ -170,6 +173,7 @@ lvm2
 man-db
 man-pages
 mariadb-libs
+matugen-git
 mdadm
 meld
 mesa
@@ -177,6 +181,7 @@ mesa-utils
 micro
 mkinitcpio
 modemmanager
+motrix-bin
 mtools
 mysql-workbench
 nano
@@ -203,7 +208,6 @@ ntfs-3g
 ntp
 nvtop
 nwg-look
-obs-studio-browser
 octopi
 odt2txt
 okular
@@ -241,6 +245,7 @@ python
 python-adblock
 python-defusedxml
 python-packaging
+qemu-desktop
 qt5ct
 qt6-wayland
 qt6ct
@@ -289,9 +294,10 @@ upower
 usb_modeswitch
 usbutils
 v4l2loopback-dkms
-vesktop
+vesktop-bin
 vi
 vim
+virt-manager
 vlc
 vpl-gpu-rt
 vscodium-bin-marketplace
@@ -302,6 +308,7 @@ which
 wireless-regdb
 wireplumber
 wl-clip-persist
+wlsunset
 wofi
 wpa_supplicant
 xclip

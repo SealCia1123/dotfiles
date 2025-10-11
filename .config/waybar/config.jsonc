@@ -3,12 +3,22 @@
     "position": "top",
     "modules-left": ["custom/stream_status", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "battery", "network", "memory", "tray"],
+    "modules-right": ["network", "pulseaudio", "battery", "memory", "tray"],
     "hyprland/workspaces": {
-        "format": "{name}: {icon}",
+        "on-click": "activate",
+        "format": "{icon}",
         "format-icons": {
-            "active": "",
-            "default": "",
+            "default": "",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "󱓻",
         },
     },
     "tray": {
@@ -22,7 +32,6 @@
     },
     "network": {
         "format-wifi": "󰤢 ",
-        "format-ethernet": "󰈀 ",
         "format-disconnected": "󰤠 ",
         "interval": 5,
         "tooltip": false,
@@ -41,5 +50,15 @@
     },
     "later": {
         "format": "<span class='icon'>{icon}</span> <span class='text'>{text}</span>",
+    },
+
+    "battery": {
+        "states": {
+            "warning": 20,
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "format-charging": "󰂄",
+        "format-warning": "󰂃",
     },
 }
