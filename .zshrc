@@ -128,8 +128,8 @@ alias dl='aria2c -x 16 -s 16' # Quick download command using aria2
 alias sde='sudoedit'
 
 # Hyprland shortcuts
-alias hylock='systemctl suspend && hyprlock'
-alias hylogout='hyprctl dispatch exit'
+# alias hylock='systemctl suspend && hyprlock'
+# alias hylogout='hyprctl dispatch exit'
 
 # TMUX shortcuts
 alias t="tmux new -s home"
