@@ -3,7 +3,7 @@ shell-integration-features = no-cursor,no-sudo,no-title
 cursor-style-blink = false
 background-opacity = 1.0
 background-blur = false
-cursor-text = #090909
+cursor-text = #060606
 font-size = 16
 # font-style-italic = true
 keybind = alt+one=unbind
@@ -37,7 +37,7 @@ palette = 14=#bebeda
 palette = 15=#d7d7d7
 
 background = #060606
-foreground = #cdcdcd
-cursor-color = #cdcdcd
+foreground = #dddddd
+cursor-color = #ffb454
 selection-background = #252530
 selection-foreground = #cdcdcd

@@ -9,6 +9,7 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 android-tools
+appmenu-gtk-module
 aria2
 ark
 arrow
@@ -42,6 +43,7 @@ cachyos-niri-settings
 cachyos-nord-kde-theme-git
 cachyos-packageinstaller
 cachyos-plymouth-bootanimation
+cachyos-plymouth-theme
 cachyos-rate-mirrors
 cachyos-settings
 cachyos-themes-sddm
@@ -55,6 +57,7 @@ chafa
 char-white
 chwd
 cliphist
+cosmic-greeter
 cpupower
 cryptsetup
 dbeaver
@@ -103,6 +106,7 @@ gst-plugin-pipewire
 gst-plugin-va
 gst-plugins-bad
 gst-plugins-ugly
+gum
 gvfs
 gwenview
 haruna
@@ -110,6 +114,8 @@ haveged
 hdf5
 hdparm
 htop
+httpie
+httpie-desktop-bin
 hwdetect
 hwinfo
 hypridle
@@ -121,6 +127,7 @@ hyprpolkitagent
 hyprshot
 imv
 inetutils
+insomnia-bin
 intel-gpu-tools
 intel-media-driver
 intel-ucode
@@ -173,7 +180,7 @@ lvm2
 man-db
 man-pages
 mariadb-libs
-matugen-git
+matugen-bin
 mdadm
 meld
 mesa

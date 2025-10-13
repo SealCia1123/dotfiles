@@ -60,14 +60,14 @@
     foreground = "#CDD6F4"
     highlight = "#CDD6F4"
     frame_color = "#181825"
-    timeout = 5
+    timeout = 3
 
 [urgency_normal]
     background = "#181825"
     foreground = "#CDD6F4"
     highlight = "#CDD6F4"
     frame_color = "#181825"
-    timeout = 5
+    timeout = 3
 
 [urgency_critical]
     background = "#181825"

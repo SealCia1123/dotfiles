@@ -61,7 +61,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     callback = function()
         -- vim.api.nvim_set_hl(0, "LspReferenceRead", {})
         -- vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
-        -- vim.api.nvim_set_hl(0, "LspReferenceText", {})
+        vim.api.nvim_set_hl(0, "LspReferenceText", {})
         vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", { fg = fg, bg = background })
         vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", { fg = fg, bg = background })
         vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = fg, bg = background })
@@ -118,6 +118,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "#141415" })
         vim.api.nvim_set_hl(0, "SnippetTabstop", { bg = "none" })
         vim.api.nvim_set_hl(0, "BlinkCmpDocCursorLine", { bg = "none", link = "SnippetTabstop" })
+        vim.api.nvim_set_hl(0, "BlinkCmpDocCursorLine", { bg = "none", link = "SnippetTabstop" })
     end,
 })
 
@@ -125,15 +126,3 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 opt.colorcolumn = "80"
 opt.cmdheight = 1
 opt.wildignorecase = true
-vim.g.clipboard = {
-    name = "wl-clipboard",
-    copy = {
-        ["+"] = "wl-copy",
-        ["*"] = "wl-copy",
-    },
-    paste = {
-        ["+"] = "wl-paste",
-        ["*"] = "wl-paste",
-    },
-    cache_enabled = 1,
-}
