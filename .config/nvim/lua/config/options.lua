@@ -54,7 +54,6 @@ opt.pumblend = 0
 -- highlight things
 local fg = "#cdcdcd"
 local bg = "#1c1f20"
-local background = "#050505"
 local comment = "#606079"
 vim.api.nvim_create_autocmd("ColorScheme", {
     pattern = "*",
@@ -62,12 +61,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         -- vim.api.nvim_set_hl(0, "LspReferenceRead", {})
         -- vim.api.nvim_set_hl(0, "LspReferenceWrite", {})
         vim.api.nvim_set_hl(0, "LspReferenceText", {})
-        vim.api.nvim_set_hl(0, "MiniStatuslineModeCommand", { fg = fg, bg = background })
-        vim.api.nvim_set_hl(0, "MiniStatuslineModeInsert", { fg = fg, bg = background })
-        vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = fg, bg = background })
-        vim.api.nvim_set_hl(0, "MiniStatuslineModeOther", { fg = fg, bg = background })
-        vim.api.nvim_set_hl(0, "MiniStatuslineModeReplace", { fg = fg, bg = background })
-        vim.api.nvim_set_hl(0, "MiniStatuslineModeVisual", { fg = fg, bg = background })
         vim.api.nvim_set_hl(0, "StatusLine", { fg = fg, bg = "none" })
         vim.api.nvim_set_hl(0, "StatusLineTerm", { fg = fg, bg = "none" })
         vim.api.nvim_set_hl(0, "StatusLineNC", { fg = comment, bg = "none" })
@@ -103,22 +96,22 @@ vim.api.nvim_create_autocmd("ColorScheme", {
         vim.api.nvim_set_hl(0, "ElNormalInactive", { fg = fg, bg = "none" })
         vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = "#606079" })
         vim.api.nvim_set_hl(0, "SnacksIndent", { fg = "#393B42" })
-        vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#252530" })
-        vim.api.nvim_set_hl(0, "BlinkCmpMenu", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "BlinkCmpKind", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "BlinkCmpScrollBarGutter", { bg = "#0e0e0e" })
-        vim.api.nvim_set_hl(0, "BlinkCmpDoc", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "BlinkCmpDocSeparator", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "BlinkCmpSignatureHelp", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "BlinkCmpLabelDescription", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "BlinkCmpLabelDetail", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "BlinkCmpSource", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "#141415" })
-        vim.api.nvim_set_hl(0, "SnippetTabstop", { bg = "none" })
-        vim.api.nvim_set_hl(0, "BlinkCmpDocCursorLine", { bg = "none", link = "SnippetTabstop" })
-        vim.api.nvim_set_hl(0, "BlinkCmpDocCursorLine", { bg = "none", link = "SnippetTabstop" })
+        -- vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#252530" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpMenu", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpKind", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpScrollBarGutter", { bg = "#0e0e0e" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpDoc", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpDocSeparator", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpSignatureHelp", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpLabelDescription", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpLabelDetail", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpSource", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "SnacksPickerBorder", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "SnippetTabstop", { bg = "none" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpDocCursorLine", { bg = "none", link = "SnippetTabstop" })
+        -- vim.api.nvim_set_hl(0, "BlinkCmpDocCursorLine", { bg = "none", link = "SnippetTabstop" })
+        -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#141415" })
+        -- vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#141415" })
     end,
 })
 

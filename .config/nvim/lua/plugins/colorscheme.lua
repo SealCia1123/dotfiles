@@ -66,12 +66,12 @@ return {
         priority = 1000,
         config = function()
             require("catppuccin").setup({
-                flavour = "auto", -- latte, frappe, macchiato, mocha
+                flavour = "mocha", -- latte, frappe, macchiato, mocha
                 background = { -- :h background
                     light = "latte",
                     dark = "mocha",
                 },
-                transparent_background = false, -- disables setting the background color.
+                transparent_background = true, -- disables setting the background color.
                 show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
                 term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
                 dim_inactive = {
@@ -95,6 +95,25 @@ return {
                     properties = {},
                     types = {},
                     operators = {},
+                },
+                lsp_styles = {
+                    virtual_text = {
+                        errors = { "italic" },
+                        hints = { "italic" },
+                        warnings = { "italic" },
+                        information = { "italic" },
+                        ok = { "italic" },
+                    },
+                    underlines = {
+                        errors = { "undercurl" },
+                        hints = { "undercurl" },
+                        warnings = { "undercurl" },
+                        information = { "undercurl" },
+                        ok = { "undercurl" },
+                    },
+                    inlay_hints = {
+                        background = true,
+                    },
                 },
                 color_overrides = {},
                 custom_highlights = {},

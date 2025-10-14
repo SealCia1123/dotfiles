@@ -33,7 +33,7 @@
     "theme": {
         "mode": "system",
         "light": "Gruvbox Light",
-        "dark": "Ayu Mirage"
+        "dark": "Catppuccin Mocha"
     },
     "cursor_blink": false,
     "format_on_save": "on",

@@ -9,7 +9,4 @@ return {
             require("neomodern").load()
         end,
     },
-    {
-        "Shatur/neovim-ayu",
-    },
 }

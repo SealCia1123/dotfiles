@@ -1,5 +1,5 @@
 require("config.lazy")
-vim.cmd.colorscheme("ayu-mirage")
+vim.cmd.colorscheme("catppuccin-mocha")
 require("lspconfig").jdtls.setup({})
 -- require("mini.statusline").setup({})
 require("el").setup({})

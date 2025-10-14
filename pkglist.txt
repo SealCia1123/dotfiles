@@ -57,12 +57,15 @@ chafa
 char-white
 chwd
 cliphist
+clipse
 cosmic-greeter
 cpupower
+croc
 cryptsetup
 dbeaver
 device-mapper
 dhclient
+dialog
 diffutils
 dmidecode
 dmraid
@@ -85,10 +88,13 @@ fastfetch
 fcitx5
 fcitx5-bamboo
 fcitx5-configtool
+fcitx5-gtk
+fcitx5-unikey
 ffmpegthumbnailer
 ffmpegthumbs
 filelight
 firefox
+freerdp
 fsarchiver
 fuzzel
 fwupd
@@ -194,6 +200,7 @@ mysql-workbench
 nano
 nano-syntax-highlighting
 nautilus
+ncdu
 nemo
 neovim-git
 netbeans
@@ -252,10 +259,10 @@ python
 python-adblock
 python-defusedxml
 python-packaging
-qemu-desktop
 qt5ct
 qt6-wayland
 qt6ct
+rclone
 rebuild-detector
 reflector
 resvg
@@ -274,6 +281,7 @@ spectacle
 starship
 stow
 sudo
+swtpm
 syncthing
 sysfsutils
 systemd-boot-manager
@@ -304,7 +312,6 @@ v4l2loopback-dkms
 vesktop-bin
 vi
 vim
-virt-manager
 vlc
 vpl-gpu-rt
 vscodium-bin-marketplace

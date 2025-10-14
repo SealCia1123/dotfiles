@@ -37,7 +37,7 @@ return {
             ["<C-b>"] = { "snippet_backward", "fallback" },
             ["<C-f>"] = { "snippet_forward", "fallback" },
             ["<C-j>"] = { "scroll_documentation_down", "fallback" },
-            ["<C-k>"] = { "scroll_documentation_up", "fallback" },
+            ["<C-k>"] = { "scroll_documentation_up", "show_signature", "hide_signature", "fallback" },
         },
 
         appearance = {
@@ -53,7 +53,7 @@ return {
         signature = {
             enabled = true,
             window = {
-                show_documentation = false,
+                show_documentation = true,
             },
         },
 

@@ -3,9 +3,10 @@ set recolor
 # set default-bg \#222230
 set recolor-lightcolor \#16191c
 set default-bg \#16191c
+set default-fg \#BBBCBE
 set recolor-keephue
-set selection-notification false
 
+set selection-notification false
 set adjust-open width
 set sandbox none
 set selection-clipboard clipboard
