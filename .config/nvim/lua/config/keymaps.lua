@@ -21,10 +21,10 @@ set("c", "<C-a>", "<home>")
 set("c", "<C-e>", "<end>")
 
 -- resize splits
-set("n", "<M-.>", "<c-w>5<")
-set("n", "<M-,>", "<c-w>5>")
-set("n", "<M-t>", "<C-W>+")
-set("n", "<M-s>", "<C-W>-")
+set("n", "<A-.>", "<c-w>5<")
+set("n", "<A-,>", "<c-w>5>")
+set("n", "<A-t>", "<C-W>+")
+set("n", "<A-s>", "<C-W>-")
 
 -- for terminal mode
 vim.api.nvim_set_keymap("t", "<esc>", "<C-\\><C-n>", { noremap = true })
@@ -36,5 +36,7 @@ set("n", "O", "O<esc>", opts)
 set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 set("v", "<leader>p", "_dP'", { desc = "[p]aste without override register" })
 
-set("n", "<M-h>", ":bprevious<CR>", { desc = "Switch to previous buffer" })
-set("n", "<M-l>", ":bnext<CR>", { desc = "Switch to next buffer" })
+set("n", "<A-h>", ":bprevious<CR>", { desc = "Switch to previous buffer" })
+set("n", "<A-l>", ":bnext<CR>", { desc = "Switch to next buffer" })
+
+set("i", "<A-w>", "<C-w>")

@@ -1,0 +1,32 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  ralt
+)
+
+(deflayer default
+ bspc
+ )
+
+;;(defalias
+;;  ralt bspc
+;;)
+
+;; (defcfg
+;;   process-unmapped-keys yes
+;; )
+;; 
+;; (defsrc
+;;   caps
+;; )
+;; 
+;; 
+;; (defalias
+;;   escctrl (tap-hold 100 200 esc lctl)
+;; )
+;; 
+;; (deflayer base
+;;   @escctrl
+;; )

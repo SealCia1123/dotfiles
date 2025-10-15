@@ -28,6 +28,7 @@ bottom
 brave-bin
 breeze-gtk
 brillo
+bruno-bin
 btop
 btrfs-progs
 cachyos-emerald-kde-theme-git
@@ -58,7 +59,9 @@ char-white
 chwd
 cliphist
 clipse
+cmake
 cosmic-greeter
+cpio
 cpupower
 croc
 cryptsetup
@@ -133,10 +136,10 @@ hyprpolkitagent
 hyprshot
 imv
 inetutils
-insomnia-bin
 intel-gpu-tools
 intel-media-driver
 intel-ucode
+interception-caps2esc
 iptables-nft
 iwd
 jetbrains-toolbox
@@ -310,7 +313,6 @@ usb_modeswitch
 usbutils
 v4l2loopback-dkms
 vesktop-bin
-vi
 vim
 vlc
 vpl-gpu-rt
@@ -341,6 +343,7 @@ xorg-xinit
 xorg-xinput
 xorg-xkill
 xorg-xrandr
+xsettings-client
 xsettingsd
 yazi
 yt-dlp

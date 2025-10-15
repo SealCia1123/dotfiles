@@ -18,8 +18,8 @@ palette = "catppuccin_mocha"
 
 [character]
 # Note the use of Catppuccin color 'peach'
-success_symbol = "[[󰄛 ](lavender)󱞩](lavender)"
-error_symbol = "[[󰄛 ](red)󱞩](red)"
+success_symbol = "[[󰄛 ](green)❯](green)"
+error_symbol = "[[󰄛 ](red)❯](red)"
 
 [git_branch]
 style = "bold mauve"
