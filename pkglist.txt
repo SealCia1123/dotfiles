@@ -144,6 +144,7 @@ iptables-nft
 iwd
 jetbrains-toolbox
 jfsutils
+kanata-bin
 kate
 kcalc
 kde-gtk-config
@@ -152,6 +153,7 @@ kdegraphics-thumbnailers
 kdeplasma-addons
 kdialog
 keepassxc
+keyd
 kinfocenter
 kio-admin
 konsole
@@ -225,6 +227,7 @@ ntfs-3g
 ntp
 nvtop
 nwg-look
+obsidian
 octopi
 odt2txt
 okular

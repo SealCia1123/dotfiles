@@ -28,7 +28,7 @@ set("n", "<A-s>", "<C-W>-")
 
 -- for terminal mode
 vim.api.nvim_set_keymap("t", "<esc>", "<C-\\><C-n>", { noremap = true })
-set("n", "<leader>nt", ":vertical terminal<cr>", { silent = true, desc = "[n]ew vertical [t]erminal" })
+set("n", "<leader>nt", ":vertical terminal<CR>", { silent = true, desc = "[n]ew vertical [t]erminal" })
 
 set("n", "Y", "y$")
 set("n", "dbw", "vbd")
@@ -39,4 +39,10 @@ set("v", "<leader>p", "_dP'", { desc = "[p]aste without override register" })
 set("n", "<A-h>", ":bprevious<CR>", { desc = "Switch to previous buffer" })
 set("n", "<A-l>", ":bnext<CR>", { desc = "Switch to next buffer" })
 
-set("i", "<A-w>", "<C-w>")
+set({ "i", "c", "t" }, "<A-w>", "<C-w>")
+set("n", "<A-u>", "<C-u>")
+set("n", "<A-d>", "<C-d>")
+set("n", "<A-s>", ":w<CR>", { silent = true })
+set("i", "<A-s>", "<esc>:w<CR>", { silent = true })
+set("n", "<A-o>", "<C-o>", { silent = true })
+set("c", "<A-y>", "<CR>", { silent = true })
