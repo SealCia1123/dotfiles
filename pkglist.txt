@@ -93,6 +93,7 @@ fcitx5-bamboo
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-unikey
+ferdium-bin
 ffmpegthumbnailer
 ffmpegthumbs
 filelight
@@ -139,12 +140,10 @@ inetutils
 intel-gpu-tools
 intel-media-driver
 intel-ucode
-interception-caps2esc
 iptables-nft
 iwd
 jetbrains-toolbox
 jfsutils
-kanata-bin
 kate
 kcalc
 kde-gtk-config
@@ -174,7 +173,6 @@ libplasma
 libreoffice-fresh
 librewolf-bin
 libva-intel-driver
-libva-vdpau-driver-vp9-git
 libvirt
 libwnck3
 linux-cachyos
@@ -227,6 +225,7 @@ ntfs-3g
 ntp
 nvtop
 nwg-look
+obs-studio-browser
 obsidian
 octopi
 odt2txt
@@ -284,6 +283,7 @@ sg3_utils
 smartmontools
 sof-firmware
 spectacle
+spoofdpi
 starship
 stow
 sudo
@@ -317,6 +317,7 @@ usbutils
 v4l2loopback-dkms
 vesktop-bin
 vim
+visual-studio-code-bin
 vlc
 vpl-gpu-rt
 vscodium-bin-marketplace
