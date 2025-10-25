@@ -1,0 +1,84 @@
+{
+    "editor.fontSize": 19,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "git.openRepositoryInParentFolders": "never",
+    "keyboard.dispatch": "keyCode",
+    "explorer.confirmDelete": false,
+    "editor.detectIndentation": false,
+    "editor.lineNumbers": "relative",
+    "window.menuBarVisibility": "toggle",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.config/.vimrc",
+    "vim.handleKeys": {
+        "<C-p>": true,
+        "<C-s>": true,
+        "<C-z>": false,
+        "<C-w>": true,
+        "<C-n>": true
+    },
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // switch b/w buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        // panes
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        // Move selected lines while staying in visual mode
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+        // toggle comment selection
+        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+    ],
+    "editor.formatOnSave": true,
+    "vim.useCtrlKeys": true,
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "breadcrumbs.enabled": false,
+    "workbench.settings.showAISearchToggle": false,
+    "chat.disableAIFeatures": true,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 17,
+    "workbench.activityBar.location": "top",
+    "basedpyright.importStrategy": "useBundled",
+    "basedpyright.analysis.inlayHints.callArgumentNames": false,
+    "basedpyright.analysis.inlayHints.functionReturnTypes": false,
+    "basedpyright.analysis.inlayHints.callArgumentNamesMatching": false,
+    "basedpyright.analysis.inlayHints.genericTypes": false,
+    "basedpyright.analysis.inlayHints.variableTypes": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "basedpyright.analysis.logLevel": "Warning",
+    "basedpyright.analysis.typeCheckingMode": "basic",
+    "editor.cursorBlinking": "solid",
+    "editor.formatOnSaveMode": "file"
+}
