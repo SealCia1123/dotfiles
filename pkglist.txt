@@ -20,6 +20,7 @@ base-devel
 bash-completion
 bind
 bluedevil
+blueman
 bluez
 bluez-hid2hci
 bluez-libs
@@ -64,6 +65,7 @@ cosmic-greeter
 cpio
 cpupower
 croc
+cromite-bin
 cryptsetup
 dbeaver
 device-mapper
@@ -349,6 +351,7 @@ xorg-xkill
 xorg-xrandr
 xsettings-client
 xsettingsd
+yaak-bin
 yazi
 yt-dlp
 zathura
