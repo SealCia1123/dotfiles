@@ -1,6 +1,6 @@
 inoremap <C-s> <esc>:w<CR>
 vnoremap <C-s> <esc>:w<CR>
-nnnoremap <C-s> :w<CR>
+nnoremap <C-s> :w<CR>
 nnoremap O O<esc>
 nnoremap Y y$
 set highlightedyank

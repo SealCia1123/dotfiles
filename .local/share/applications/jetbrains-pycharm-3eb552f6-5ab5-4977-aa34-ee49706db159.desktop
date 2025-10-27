@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PyCharm 2025.2.4
+Exec="/home/harry/.local/share/JetBrains/Toolbox/apps/pycharm-2/bin/pycharm" %u
+Version=1.0
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+Icon=/home/harry/.local/share/JetBrains/Toolbox/dotDesktopIcons/jetbrains-pycharm-3eb552f6-5ab5-4977-aa34-ee49706db159.desktop.icon.svg
+Comment=The Only Python IDE you need
+StartupWMClass=jetbrains-pycharm
+StartupNotify=true
