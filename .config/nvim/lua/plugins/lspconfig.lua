@@ -43,18 +43,6 @@ return {
             folds = {
                 enabled = true,
             },
-            -- add any global capabilities here
-            capabilities = {
-                workspace = {
-                    fileOperations = {
-                        didRename = true,
-                        willRename = true,
-                    },
-                },
-            },
-            -- options for vim.lsp.buf.format
-            -- `bufnr` and `filter` is handled by the LazyVim formatter,
-            -- but can be also overridden when specified
             format = {
                 formatting_options = nil,
                 timeout_ms = nil,
@@ -62,8 +50,31 @@ return {
             -- LSP Server Settings
             ---@type table<string, vim.lsp.Config|{mason?:boolean, enabled?:boolean}|boolean>
             servers = {
-                clangd = {},
-                clang_format = {},
+                -- configuration for all lsp servers
+                ["*"] = {
+                    capabilities = {
+                        workspace = {
+                            fileOperations = {
+                                didRename = true,
+                                willRename = true,
+                            },
+                        },
+                    },
+                },
+                yamlls = { mason = true },
+                ruff = { mason = true },
+                ts_ls = { mason = true },
+                basedpyright = { mason = true },
+                emmet_ls = { mason = true },
+                lemminx = { mason = true },
+                hyprls = { mason = true },
+                clangd = { mason = true },
+                clang_format = { mason = true },
+                docker_compose_language_servic = { mason = true },
+                docker_language_server = { mason = true },
+                dockerls = { mason = true },
+                stylelint = { mason = true },
+                cssls = { mason = true },
                 lua_ls = {
                     -- mason = false, -- set to false if you don't want this server to be installed with mason
                     -- Use this to add any additional keymaps

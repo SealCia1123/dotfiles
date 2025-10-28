@@ -33,6 +33,9 @@ Plug 'tpope/vim-commentary'
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
 nnoremap Y y$
+inoremap <A-n> <C-n>
+inoremap <A-p> <C-p>
+inoremap <A-y> <C-y>
 nnoremap <C-j> 10jzz
 nnoremap <C-k> 10kzz
 vnoremap <C-j> 10j
@@ -48,4 +51,6 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set clipboard+=unnamedplus
+set ideajoin
+set clipboard=unnamedplus
+set clipboard+=ideaput

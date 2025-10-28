@@ -153,7 +153,6 @@ source <(fzf --zsh)
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
 export TERMINAL="/usr/bin/ghostty"
-export BROWSER="/usr/bin/thorium-browser-avx2"
 export FIREFOX="/usr/bin/librewolf"
 
 export FZF_COMPLETION_TRIGGER='::'
