@@ -52,6 +52,9 @@ return {
             servers = {
                 -- configuration for all lsp servers
                 ["*"] = {
+                    keys = {
+                        { "<leader>ca", vim.lsp.buf.code_action, desc = "Code Action", has = "codeAction" },
+                    },
                     capabilities = {
                         workspace = {
                             fileOperations = {
@@ -75,6 +78,16 @@ return {
                 dockerls = { mason = true },
                 stylelint = { mason = true },
                 cssls = { mason = true },
+                google_java_format = { mason = true },
+                prettier = { mason = true },
+                shellcheck = { mason = true },
+                shfmt = { mason = true },
+                stylua = { mason = true },
+                tailwindcss_language_server = { mason = true },
+                tombi = { mason = true },
+                tree_sitter_cli = { mason = true },
+                yaml_language_server = { mason = true },
+                vscode_spring_boot_tools = { mason = true },
                 lua_ls = {
                     -- mason = false, -- set to false if you don't want this server to be installed with mason
                     -- Use this to add any additional keymaps

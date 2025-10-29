@@ -25,3 +25,4 @@ x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 # Handlers you explicitly left blank
 x-scheme-handler/ipfs=
 x-scheme-handler/ipns=
+x-scheme-handler/discord=vesktop.desktop
