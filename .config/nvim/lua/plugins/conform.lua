@@ -7,6 +7,7 @@ return {
             html = { "prettier" },
             js = { "prettier" },
             ts = { "prettier" },
+            htmldjango = { "prettier" },
         },
         formatters = {
             -- ["google-java-format"] = {

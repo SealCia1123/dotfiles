@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=DataGrip 2025.2.4
+Exec="/home/harry/.local/share/JetBrains/Toolbox/apps/datagrip/bin/datagrip" %u
+Version=1.0
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+Icon=/home/harry/.local/share/JetBrains/Toolbox/dotDesktopIcons/jetbrains-datagrip-13e765ff-31c1-4ad1-afe1-73b6bc2be5c2.desktop.icon.svg
+Comment=The IDE for databases and SQL
+StartupWMClass=jetbrains-datagrip
+StartupNotify=true

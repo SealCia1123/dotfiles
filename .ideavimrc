@@ -35,7 +35,6 @@ Plug 'tpope/vim-commentary'
 nnoremap Y y$
 inoremap <A-n> <C-n>
 inoremap <A-p> <C-p>
-inoremap <A-y> <C-y>
 nnoremap <C-j> 10jzz
 nnoremap <C-k> 10kzz
 vnoremap <C-j> 10j
@@ -43,9 +42,10 @@ vnoremap <C-k> 10k
 nnoremap O O<esc>
 nnoremap <S-h> :bp<CR>
 nnoremap <S-l> :bn<CR>
-inoremap <C-s> <esc>:w<CR>
-nnoremap <C-s> :w<CR>
 map s <Action>(flash.search)
+inoremap <C-s> <esc>:w<CR>
+nnoremap <C-s> <esc>:w<CR>
+vnoremap <C-s> <esc>:w<CR>
 set relativenumber
 set number
 set tabstop=4

@@ -43,7 +43,7 @@ font-family = JetBrainsMono Nerd Font
 # selection-background = #252530
 # selection-foreground = #cdcdcd
 
-background-opacity = 0.7
+# background-opacity = 0.7
 
 palette = 0=#45475a
 palette = 1=#f38ba8
@@ -61,7 +61,7 @@ palette = 12=#89b4fa
 palette = 13=#f5c2e7
 palette = 14=#94e2d5
 palette = 15=#bac2de
-background = #000000
+background = #060606
 foreground = #cdd6f4
 cursor-color = #f5e0dc
 cursor-text = #11111b
